@@ -1,0 +1,206 @@
+## Change delimiters for Cheetah
+#compiler-settings
+cheetahVarStartToken = ;
+directiveStartToken = !
+#end compiler-settings
+
+\documentclass[margin]{res}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\textheight=10.4in
+\topmargin -0.4in
+\itemsep=0in
+\parsep=0in
+
+%\Bibliography
+
+\usepackage{csquotes}
+\usepackage[url=false, defernumbers=true, maxnames=10,sortcites,sorting=ydnt]{biblatex}
+\renewbibmacro{in:}{}
+
+\bibliography{Publications.bib}
+
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+
+\vspace*{.5in}
+
+\moveleft.7\hoffset\centerline{\LARGE\bf Panagiotis Angeloudis}
+\vspace{-.43cm}\moveright.91\hoffset\centerline{\small PHD, DIC, ACGI, MCILT}
+
+\vspace{.1in}
+\moveleft.5\hoffset\centerline{\large{ Senior Lecturer in Transport Systems \& Logistics}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\begin{tabular}{@{}p{3in}p{0.3in}p{3in}}
+
+Room 337, Skempton Building                       & {\it phone:} & +44 207 594 5986  \\
+Department of Civil \& Environmental Engineering  & {\it skype:} & panagiotis.angeloudis \\
+Imperial College London                           & {\it email:} & p.angeloudis@imperial.ac.uk\\
+London, SW7 2BU, United Kingdom                   & {\it web:}   & imperial.ac.uk/people/p.angeloudis \\     
+
+\end{tabular}
+
+\section{\sc Research Interests}
+Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
+Algorithmic Game Theory, Metaheuristics, Agent Based Simulation
+
+\section{\sc Academic\\ Positions}
+!for ;entry in ;aca_posts
+	{\bf ;entry.org_name}, ;entry.org_location \\
+	!if ;entry.roles
+	!for ;entry1 in ;entry.roles
+		\tab[0.2in] \textit{;entry1.position_name} \hfill {\bf ;entry1.position_from - ;entry1.position_to}\\
+		!if ;entry1.get("subroles", None) != None
+		!for ;subrole in ;entry1.subroles
+			\tab[0.4in] ;subrole \\
+		!end for
+		!end if
+	!end for
+	!end if
+!end for
+
+\section{\sc Professional\\ Positions}
+!for ;entry in ;pro_posts
+	{\bf ;entry.org_name}, ;entry.org_location \\
+	!if ;entry.roles
+	!for ;entry1 in ;entry.roles
+		\tab[0.2in] \textit{;entry1.position_name} \hfill {\bf ;entry1.position_from - ;entry1.position_to}\\
+		!if ;entry1.get("subroles", None) != None
+		!for ;subrole in ;entry1.subroles
+			\tab[0.4in] ;subrole \\
+		!end for
+		!end if
+	!end for
+	!end if
+!end for
+
+\section{\sc Education}
+{\bf Imperial College London}, United Kingdom\\
+\textit{PhD in Transport Engineering} \hfill {\bf Oct 2005 - Nov 2009}\\
+\textit{MEng in Civil \& Enviornmnetal Engineering (First Class Honours)} \hfill {\bf Oct 2001 - Jun 2005}\\
+
+
+\section{\sc Proffesional\\ Affiliations}
+!for ;entry in ;pro_affiliations
+    {\bf ;entry.title} ;entry.organisation\\
+!end for
+
+\section{\sc Research\\ Grants}
+!set ;sumtext=0
+!for ;entry in ;research_grants
+	\vspace{0.03in}
+	!set ;sumtext+= int(;entry.value)
+	\begin{minipage}{\textwidth}
+	{\bf ;entry.name} \hfill {\bf ;entry.year} \\
+	\tab[0.2in] \textsterling{
+	!echo("{:,}".format(int(;entry.value)).rjust(7).replace(" ","\space"))
+	}
+	\quad ;entry.source
+	!if ;entry.get("code", None) != None
+	\textit{(Grant code: ;entry.code)}
+	!end if
+	\end{minipage}
+	\\
+!end for
+
+\vspace{-0.25in}
+\textit{Total research grants: \textsterling{
+!echo("{:,}".format(int(;sumtext)).rjust(7).replace(" ","\space"))
+}}
+
+\section{\sc Research\\ Contracts}
+!set ;sumtext=0
+
+!for ;entry in ;research_contracts
+	\vspace{0.03in}
+	!set ;sumtext+= int(;entry.value)
+	\begin{minipage}{\textwidth}
+	{\bf ;entry.name} \hfill {\bf ;entry.year} \\
+	\tab[0.2in] \textsterling{
+	!echo("{:,}".format(int(;entry.value)).rjust(7).replace(" ","\space"))
+	}
+	\quad  \textit{;entry.source}
+	\end{minipage}\\
+!end for
+
+\vspace{-0.25in}
+\textit{Total research contracts: \textsterling{
+!echo("{:,}".format(int(;sumtext)).rjust(7).replace(" ","\space"))
+}}
+
+\section{\sc PhD Student\\ Supervision}
+!for ;entry in ;phd_students
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf ;entry.name} \hfill {\bf ;entry.from - ;entry.to} \\
+	\tab[0.2in] \textit{;entry.title}
+	\end{minipage}
+	\\
+!end for
+
+\section{\sc Research\\ Contributions}
+!for ;entry in ;research_contib
+	\begin{minipage}{\textwidth}
+	{\bf ;entry.area} \\
+	\vspace{0.1in}
+	\begin{minipage}{\textwidth}
+	\setlength{\leftskip}{0.2in}
+	\textit{
+	!echo(", ".join(;entry.items).strip())
+	}
+	\end{minipage}
+	\end{minipage}
+	\\
+!end for
+
+\section{\sc Teaching\\ Contributions}
+!for ;entry in ;teaching_contib
+	{\bf ;entry.progamme},\textit{;entry.role} \hfill {\bf ;entry.years}\\
+!end for
+
+
+
+\section{\sc {Publications}}
+
+\nocite{*}
+
+\section{\sc {Publications}}
+\printbibliography[heading=none,type=article,resetnumbers=true]
+
+\section{\sc {Book Chapters}}
+\printbibliography[heading=none,type=book,resetnumbers=true]
+
+\section{\sc {Conference\\ Proceedings}}
+
+
+\end{resume}
+\end{document}
+
+
+
+

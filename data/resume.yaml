@@ -1,0 +1,276 @@
+aca_posts:
+    - org_name: Imperial College London
+      org_location: United Kingdom
+      roles:
+      - position_name: Senior Lecturer in Transport Systems and Logistics
+        position_from: Aug 2016
+        position_to: present
+      - position_name: Lecturer in Urban Engineering Systems
+        position_from: Jun 2012
+        position_to: Jul 2016
+        subroles: 
+        - Director, Port Operations Research and Technology Centre (PORTeC)
+        - Director, Intelligent Infrastructure & Transport Systems Laboratory (IITS)
+        - Deputy Teaching Director, MSc in Transport
+        - Member, Centre for Systems Engineering and Innovations
+        - Member, Institute for Security Science and Technology
+        - Member, Imperial Robotics Forum
+      - position_name: Research Associate
+        position_from: Nov 2009
+        position_to: May 2012
+      - position_name: Research Assistant
+        position_from: Nov 2008
+        position_to: May 2009  
+        subroles: 
+        - Visiting Lecturer, Imperial College Business School
+        - Graduate Teaching Assistant, Dept. of Civil & Environmental Engineering
+    - org_name: Kyoto University
+      org_location: Japan
+      roles:
+        - position_name: JSPS Research Fellow
+          position_from: Mar
+          position_to: Jun 2013                         
+
+pro_posts:
+    - org_name: Imperial College Consultants Ltd
+      org_location: London, United Kingdom
+      roles:
+      - position_name: Research Consultant
+        position_from: Sep 2006
+        position_to: present 
+    - org_name: United Nations
+      org_location: Geneva, Switzerland
+      roles:
+      - position_name: Graduate Intern
+        position_from: May
+        position_to: Aug 2006 
+    - org_name: P&O Ports
+      org_location: Southampton, United Kindom
+      roles:
+      - position_name: Analyst
+        position_from: Jul
+        position_to: Sep 2005     
+
+research_grants:
+    - name: A radical mode SHIFT enabled by autonomous pods
+      year: 2018
+      source: InnovateUK
+      value: 299800
+    - name: Sustainable demand responsive transit schemes for developing countries
+      year: 2017
+      source: EPSRC
+      value: 7500
+    - name: NOx emissions estimation in real time
+      year: 2017
+      source: InnovateUK
+      value: 301200
+      code: 103304
+    - name: Kinetic energy recovery for urban logistics applications (KERS-URBAN)
+      year: 2016
+      source: InnovateUK
+      value: 425000
+      code: 103253
+    - name: Incident detection in shipping markets
+      year: 2016
+      source: HEFCE
+      value: 18000
+    - name: OVARE - Optimised Vehicle Autonomy for Ride and Emissions
+      year: 2015   
+      source: InnovateUK
+      value: 160000
+      code: 132275
+    - name: Strategic Network - Cities as Complex Adaptive Systems
+      year: 2015
+      source: ESRC
+      value: 10160
+      code:  ES/N009436/1 
+    - name: Pathways to Impact – Shipbroking Optimization Platforms
+      year: 2015
+      source: EPSRC
+      value: 74888
+      code: EP/K503733/1
+    - name: Digitally Enabling Electrification
+      year: 2013
+      code: 32016-235149
+      source: InnovateUK
+      value: 190000
+    - name: Postdoctoral Research Fellowship on Infrastructure Resilience
+      year: 2013
+      source: JSPS
+      value: 10000
+    - name: Optimisation of DfMA structures 
+      year: 2013
+      source: EPSRC
+      code: EP/L504683
+      value: 266000
+    - name: Clean Last mile transport and logistics management 
+      year: 2011
+      source: European Commission
+      code: IEE10154
+      value: 107957
+    - name: Robust and Stochastic Optimisation Methods for AGVs 
+      year: 2008
+      source: EPSRC
+      code: EP/F044895
+      value: 538302
+
+research_contracts:
+    - name: Optimisation of Prefabrication Strategies for Nuclear Construction
+      year: 2017
+      source: Bouygues Construction
+      value: 68000
+    - name: Understanding the passenger road network through data 
+      year: 2017
+      source: UK Government Office of Science
+      value: 10000
+    - name: Development of the Colombian National Logistics Masterplan
+      year: 2016
+      source: Ivarsson & Asociados
+      value: 15000
+    - name: Wuhan Yangtze River Maritime Cluster Masterplan
+      source: China Dev.&Ref. Commission
+      value: 44000
+      year: 2016
+    - name: Optimisation of construction logistics operations
+      source: Laing O’Rourke
+      value: 36000
+      year: 2013
+    - name: A universal infrastructure resilience assessment framework
+      source: ARUP
+      value: 25000
+      year: 2012
+    - name: Global container shipping network modelling
+      source: SITI Institute
+      value: 15000
+      year: 2011
+    - name: Design and Detailed Simulation Analysis of automated check-in 
+      source: Department for Transport
+      value: 15000
+      year: 2006
+    - name: Scoping study for the improved FORGE model
+      source: P&O Ferries
+      value: 2000
+      year: 2006
+    - name: Throughput bottleneck analysis in container terminals
+      source: P&O Ports
+      value: 2800
+      year: 2005
+
+pro_affiliations:
+    - organisation: Chartered Institute of Logistics and Transport
+      title: Chartered Member
+    - organisation: Technical Chamber of Greece
+      title: Chartered Civil Engineer
+    - organisation: Operational Research Society
+      title: Member
+
+phd_students:
+    - name: Hsu, Leo 
+      title: Flexible design of supply chains in the construction industry
+      from: 2015
+      to: Present
+    - name: Jayum, Kimberly
+      title: Risk of Autonomous Vehicle Operations
+      from: 2016
+      to: Present
+    - name: Escribano, Jose
+      title: Strategic planning of post-disaster infrastructure repairs
+      from: 2015
+      to: Present
+    - name: Karamanis, Renos
+      title: Infrastructure Resilience Modelling
+      from: 2015
+      to: Present
+    - name: Goldbeck, Nils
+      title: Development of Urban Infrastructure resilience models
+      from: 2014
+      to: Present
+    - name: Seo, Jung-Yong 
+      title: Integrated routing and scheduling of free-ranging Automated Guided Vehicles
+      from: 2014
+      to: Present
+    - name: Achurra, Pablo 
+      title: Resilience of the global liner shipping network.
+      from: 2013
+      to: Present
+    - name: Sang, Wenlong 
+      title: Reliability of highway network architectures
+      from: 2012
+      to: 2016
+    - name: Thalis Zis
+      title: Environmental impact of port operations
+      from: 2012
+      to: 2015
+    - name: Noye, Sarah
+      title: Use of wireless sensor networks in building energy and comfort monitoring
+      from: 2011
+      to: 2016
+    - name: Rochau, Normen
+      title: Capacity constraints in public transportation
+      from: 2009
+      to: 2013
+    - name: Nikhalat, Hamed
+      title: An operational model for LNG spot and arbitrage sales
+      from: 2008
+      to: 2012
+    - name: Liu, Xin
+      title: Port choice, a frequency-based container assignment model
+      from: 2008
+      to: 2012
+
+research_contib:
+    - area: Grant Proposal Reviews
+      items:
+        - Royal Society (United Kingdom)
+        - Japanese Society for the Promotion of Science (Japan)
+        - Archimedes & Thales Funding Programmes (Greece)
+        - Research Financing Directorate (Romania)
+    - area: Journal Manuscripts Reviews
+      items:
+         - Accident Analysis and Prevention
+         - Advanced Engineering Informatics
+         - Advanced Transportation
+         - Computers & Operations Research
+         - Engineering Applications of Artificial Intelligence
+         - Flexible Services and Manufacturing
+         - IEEE Transactions on Automation Science and Engineering
+         - Industrial Engineering, Theory, Applications & Practice
+         - Maritime Policy and Management
+         - Operations Research
+         - Physica A
+         - Science of the Total Environment
+         - Transportation
+         - Transportation Planning and Technology
+         - Transportation Research Part A 
+         - Transportation Research Part B 
+         - Transportation Research Part C
+         - Transportation Research Part D 
+         - Transportation Research Part E
+         - Transportmetrica A
+    - area: Conference Manuscript Reviews
+      items:
+        - International Network Operations Conference
+        - Transport Research Board Annual Meeting 
+        - International IEEE Annual Conference on Intelligent Transportation Systems
+        - Logistics and Maritime Systems
+
+teaching_contib:
+        - progamme: MSc in Transport
+          role: Deputy Teaching Director
+          years: 2013-present
+        - progamme: CI370 Transport Systems
+          role: Module Coordinator
+          years: 2012-present
+        - progamme: CI423 Operations Research
+          role: Contributor
+          years: 2012-present
+        - progamme: T24 Ports and Maritime Transport 
+          role: Module Coordinator
+          years: 2012-present
+        - progamme: T20 Freight Transport
+          role: Module Coordinator
+          years: 2012-2017
+        - progamme: Advanced Programming for Finance
+          role: Module Coordinator
+          years: 2009-2012
+
