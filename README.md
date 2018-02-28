@@ -8,7 +8,7 @@ Inspiration came from [James Keirstead](https://github.com/jkeirstead/jk-vita) a
 
 While I normally use Windows, setting everything up there can get quite tedious. To generate my CV, I use an Ubuntu installation within the Windows Subsystem for Linux. This code assumes that you are operating with Python 3.x, although it should work with Python 2.x
 
-## setup instructions
+## Setup
 
 ```
 sudo apt-get install texlive-latex-base texlive-latex-extra texlive-latex-recommended xzdec
