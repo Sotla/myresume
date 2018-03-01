@@ -1,5 +1,23 @@
 conferences:
-  - title: Rapid Urban Evacuation acrross Constrained Transport Networks
+  - title: Supply Chain Design for Modular Construction Projects
+    year: 2017
+    authors: Hsu PY, Aurisicchio M and Angeloudis P
+    conference: LC3 
+    location: Heraklion
+    country: Greece
+  - title: Establishing outsourcing and supply chain plans for prefabricated construction projects under uncertain productivity
+    year: 2017
+    authors: Hsu PY, Aurisicchio M and Angeloudis P
+    conference: ICCL 
+    location: Southampton
+    country: United Kingdom
+  - title: Investigating Schedule Deviation in Construction Projects through Root Cause Analysis
+    year: 2017
+    authors: Hsu PY, Aurisicchio M and Angeloudis P
+    conference: ProjMan 
+    location: Barcelona
+    country: Spain
+  - title: Rapid Urban Evacuation across Constrained Transport Networks
     year: 2017
     code: P17B
     authors: Escribano J, Angeloudis P and Ochieng W
