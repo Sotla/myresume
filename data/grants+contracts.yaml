@@ -1,0 +1,109 @@
+research_grants:
+  - name: A radical mode SHIFT enabled by autonomous pods
+    year: 2018
+    source: InnovateUK
+    value: 299800
+  - name: Sustainable demand responsive transit schemes for developing countries
+    year: 2017
+    source: EPSRC
+    value: 7500
+  - name: NOx emissions estimation in real time
+    year: 2017
+    source: InnovateUK
+    value: 301200
+    code: 103304
+  - name: Optimisation of prefabricated construction (CASE)
+    source: EPSRC, Rolls-Royce
+    year: 2017
+    code: 17000031
+    value: 98000
+  - name: Kinetic energy recovery for urban logistics applications (KERS-URBAN)
+    year: 2016
+    source: InnovateUK
+    value: 425000
+    code: 103253
+  - name: Incident detection in shipping markets
+    year: 2016
+    source: HEFCE
+    value: 18000
+  - name: OVARE - Optimised Vehicle Autonomy for Ride and Emissions
+    year: 2015   
+    source: InnovateUK
+    value: 160000
+    code: 132275
+  - name: Strategic Network - Cities as Complex Adaptive Systems
+    year: 2015
+    source: ESRC
+    value: 10160
+    code:  ES/N009436/1 
+  - name: Pathways to Impact – Shipbroking Optimization Platforms
+    year: 2015
+    source: EPSRC
+    value: 74888
+    code: EP/K503733/1
+  - name: Digitally Enabling Electrification
+    year: 2013
+    code: 32016-235149
+    source: InnovateUK
+    value: 190000
+  - name: Postdoctoral Research Fellowship on Infrastructure Resilience
+    year: 2013
+    source: JSPS
+    value: 10000
+  - name: Optimisation of DfMA structures 
+    year: 2013
+    source: EPSRC
+    code: EP/L504683
+    value: 266000
+  - name: Clean Last mile transport and logistics management 
+    year: 2011
+    source: European Commission
+    code: IEE10154
+    value: 107957
+  - name: Robust and Stochastic Optimisation Methods for AGVs 
+    year: 2008
+    source: EPSRC
+    code: EP/F044895
+    value: 538302
+
+research_contracts:
+  - name: Optimisation of Prefabrication Strategies for Nuclear Construction
+    year: 2017
+    source: Bouygues Construction, France
+    value: 68000
+  - name: Understanding the passenger road network through data 
+    year: 2017
+    source: Government Office of Science, United Kingdom
+    value: 10000
+  - name: Development of the Colombian National Logistics Masterplan
+    year: 2016
+    source: Ivarsson & Asociados, Colombia
+    value: 15000
+  - name: Wuhan Yangtze River Maritime Cluster Masterplan
+    source: National Development and Reform Commission, China
+    value: 44000
+    year: 2016
+  - name: Optimisation of construction logistics operations
+    source: Laing O' Rourke, United Kingdom
+    value: 36000
+    year: 2013
+  - name: A universal infrastructure resilience assessment framework
+    source: ARUP, United Kingdom
+    value: 25000
+    year: 2012
+  - name: Global container shipping network modelling
+    source: SITI Institute, Italy
+    value: 15000
+    year: 2011
+  - name: Design and Detailed Simulation Analysis of automated check-in 
+    source: Department for Transport, United Kingdom
+    value: 15000
+    year: 2006
+  - name: Scoping study for the improved FORGE model
+    source: P&O Ferries, United Kingdom
+    value: 2000
+    year: 2006
+  - name: Throughput bottleneck analysis in container terminals
+    source: P&O Ports, United Kingdom
+    value: 2800
+    year: 2005

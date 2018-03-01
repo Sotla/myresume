@@ -4,12 +4,12 @@ cheetahVarStartToken = ;
 directiveStartToken = !
 #end compiler-settings
 
-\documentclass[margin]{res}
+\documentclass[margin,a4]{res}
 
 \oddsidemargin -.5in
 \evensidemargin -.5in
 \textwidth=6.0in
-\textheight=9.5in
+\textheight=10in
 \topmargin -0.4in
 \itemsep=0in
 \parsep=0in
@@ -46,15 +46,18 @@ directiveStartToken = !
 
 \begin{document}
 
-\vspace*{.5in}
+\vspace*{0in}
 
 \moveleft.7\hoffset\centerline{\LARGE\bf Panagiotis Angeloudis}
-\vspace{-.43cm}\moveright.91\hoffset\centerline{\small PHD, DIC, ACGI, MCILT}
+
+\vspace{.05in}\moveleft.7\hoffset\centerline{\small PHD, MEng, DIC, ACGI, MCILT}
 
 \vspace{.1in}
-\moveleft.5\hoffset\centerline{\large{ Senior Lecturer in Transport Systems \& Logistics}}
+\moveleft.7\hoffset\centerline{\large{ Senior Lecturer in Transport Systems \& Logistics}}
 
 \begin{resume}
+\vspace{-.2in}\small\textit{Last updated: \today}
+
 \section{\sc Contact Information}
 \begin{tabular}{@{}p{3in}p{0.3in}p{3in}}
 
@@ -220,7 +223,11 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 !set ;currentyear = ;minto
 !while int(;currentyear) >= ;int(;minfrom)
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
 	{\bf;currentyear }
+	!set ;joine = 0
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	!set ;temp = ""
 	!for ;entry in ;taughtlist 
@@ -230,7 +237,8 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!end for
 	!set ;temp = ;temp[:-2]
 	!if ;len(temp) > 0
-		MSc: ;temp 
+		\textit{MSc}: ;temp 
+		!set ;joine = 1
 	!end if 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	!set ;temp = ""
@@ -241,7 +249,11 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!end for
 	!set ;temp = ;temp[:-2]
 	!if ;len(temp) > 0
-		MEng: ;temp 
+		!if ;joine == 1 
+			{}
+		!end if
+		\textit{MEng}: ;temp 
+		!set ;joine = 1
 	!end if
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	!set ;temp = ""
@@ -252,11 +264,14 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!end for
 	!set ;temp = ;temp[:-2]
 	!if ;len(temp) > 0
-		UROP: ;temp 
+		!if ;joine == 1 
+			{ }
+		!end if
+		\textit{UROP}: ;temp 
 	!end if
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	!set ;currentyear = int(;currentyear)-1
-	\\
+	\par
 !end while
 
 \nocite{*}

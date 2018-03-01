@@ -1,0 +1,270 @@
+phd_students:
+  - name: Haughton, Tim
+    title: Optimisation of prefabricated construction
+    from: 2017
+    to: Present
+  - name: Jayum, Kimberly
+    title: Risk of Autonomous Vehicle Operations
+    from: 2016
+    to: Present
+  - name: Hsu, Leo 
+    title: Flexible design of supply chains in the construction industry
+    from: 2015
+    to: Present
+  - name: Escribano, Jose
+    title: Strategic planning of post-disaster infrastructure repairs
+    from: 2015
+    to: Present
+  - name: Karamanis, Renos
+    title: Infrastructure Resilience Modelling
+    from: 2015
+    to: Present
+  - name: Goldbeck, Nils
+    title: Development of Urban Infrastructure resilience models
+    from: 2014
+    to: Present
+  - name: Seo, Jung-Yong 
+    title: Integrated routing and scheduling of free-ranging Automated Guided Vehicles
+    from: 2014
+    to: Present
+  - name: Achurra, Pablo 
+    title: Resilience of the global liner shipping network.
+    from: 2013
+    to: 2017
+  - name: Sang, Wenlong 
+    title: Reliability of highway network architectures
+    from: 2012
+    to: 2016
+  - name: Thalis Zis
+    title: Environmental impact of port operations
+    from: 2012
+    to: 2015
+    now: Researcher in DTU Management Engineering
+    url: http://www.dtu.dk/english/service/phonebook/person?id=105095&tab=2&qt=dtupublicationquery
+  - name: Noye, Sarah
+    title: Improved building services commissioning using wireless sensor networks
+    from: 2011
+    to: 2016
+    now: Researcher in Smart Buildings and Cities at TECNALIA Research & Innovation
+    url: https://www.linkedin.com/in/sarah-noye/
+  - name: Rochau, Normen
+    title: Capacity constraints in public transportation
+    from: 2009
+    to: 2013
+    now: Engineer in PTV AG
+  - name: Nikhalat, Hamed
+    title: An operational model for LNG spot and arbitrage sales
+    from: 2008
+    to: 2012
+    now: Researcher at INESCTEC
+  - name: Liu, Xin
+    title: Port choice, a frequency-based container assignment model
+    from: 2008
+    to: 2012
+
+postdocs:
+  - name: Dr Mino Woo
+    project: Emissions-based vehicle pricing models
+    from: 2017
+    to: present
+  - name: Dr Pablo Achurra-Gonzalez
+    project: Kinetic Energy Recovery Systems for Freight Vehicles
+    from: 2017
+    to: present
+  - name: Dr Juan Marcos Garcia de la Cruz Lopez
+    project: Kinetic Energy Recovery Systems for Freight Vehicles
+    from: 2016
+    to: 2017
+    now: Data Scientist at McLaren Racing
+    URL: https://www.linkedin.com/in/juan-marcos-garc%C3%ADa-de-la-cruz-l%C3%B3pez-25b19b89/
+  - name: Niknejad, Ali
+    project: Maritime Shipbroking Platforms
+    from: 2015
+    to: 2016
+  - name: Hu, Simon
+    project: Vehicle Emissions Monitoring and Simulation
+    from: 2015
+    to: 2017
+  - name: Anvari, Bani
+    project: DfMA for Nuclear Construction
+    from: 2013
+    to: 2016
+    now: Lecturer in Intelligent Mobility at University College London
+  - name: Ye, Hao
+    project: Spatial Models for Urban Resilience
+    from: 2013
+    to: 2014
+
+taughtstudents:
+  - name: Kisaanth Jeyarayan
+    type: MEng
+    year: 2018
+  - name: Ioannis Tsipouras
+    type: MEng
+    year: 2018
+  - name: Mario Abou Farhat
+    type: MSc
+    year: 2017
+  - name: Simone Charles Severin
+    type: MSc
+    year: 2017
+  - name: Adrien Callet
+    type: MSc
+    year: 2017      
+  - name: Dimitrios Demeroukas
+    type: MSc
+    year: 2017    
+  - name: Ponn Chalermwongsawej
+    type: MSc
+    year: 2017   
+  - name: Guanjin Chen
+    type: MSc
+    year: 2017   
+  - name: Qiyu Sun
+    type: MSc
+    year: 2016
+  - name: Carlos Estaban Piola Ruiz
+    type: MSc
+    year: 2016
+  - name: Andreas Kaloterakis
+    type: MSc
+    year: 2016
+  - name: Ivo Keranov
+    type: MSc
+    year: 2016
+  - name: Linda Ivarsson
+    type: MSc
+    year: 2016
+  - name: Wang Yue
+    type: MSc
+    year: 2016
+  - name: Konstantinos Simotas
+    type: MSc
+    year: 2015  
+  - name: Cecilia Thordadottir
+    type: MSc
+    year: 2014
+  - name: Matteo Novatti
+    type: MSc
+    year: 2014
+  - name: Andrew Elwood
+    type: MSc
+    year: 2014
+  - name: Gift Arnongant
+    type: MSc
+    year: 2014
+  - name: Apostolos Ziakopoulos
+    type: MSc
+    year: 2014
+  - name: Suqi Shi
+    type: MSc
+    year: 2014
+  - name: Shuxuan Gong
+    type: MSc
+    year: 2013
+  - name: Ioanna Karelia
+    type: MSc
+    title: Automated gate sizing in Container Terminals
+    year: 2012
+  - name: Naveeth Basheer
+    type: MEng
+    year: 2017
+  - name: Tim Haughton
+    type: MEng
+    year: 2017
+  - name: Khaled Abdulhamid
+    type: MEng
+    year: 2017
+  - name: Anna Feledi
+    type: MEng
+    year: 2017
+  - name: Ali Reza Baygi 
+    type: MEng
+    year: 2016
+  - name: Mohamed Gaafar 
+    type: MEng
+    year: 2016
+  - name: Kishan Patel
+    type: MEng
+    year: 2016
+  - name: Giannis Slimpi
+    type: MEng
+    year: 2016
+  - name: Nicholas Wong
+    type: MEng
+    year: 2015
+  - name: Javier Mnroig Vives
+    type: MEng
+    year: 2015
+  - name: Jose Escribano
+    type: MEng
+    year: 2015
+  - name: Jae Yung
+    type: MEng
+    year: 2015
+  - name: Alexandros Abadjis 
+    type: MEng
+    year: 2015
+  - name: Elena Ochoa Garcia
+    type: MEng
+    year: 2014
+  - name: Tamara Brooks
+    type: MEng
+    year: 2014
+  - name: Bernadette Lee
+    type: MEng
+    title: User involvement in bike sharing repositioning 
+    year: 2012
+  - name: Anna Feledi
+    type: UROP
+    year: 2016
+  - name: Nisansa Igalawithana
+    type: UROP
+    year: 2017
+  - name: Muhamad Haji Kasri
+    type: UROP
+    year: 2015
+  - name: Dimitris Papadopoulos
+    type: MSc
+    year: 2011
+    title: Energy Networks as Complex Networks
+  - name: Qinq Zhao
+    type: MSc
+    year: 2011
+    title: Environmental impact of automated ports
+  - name: Paul Corry
+    type: MEng
+    year: 2010
+    title: Evaluation of container storage in UK ports
+  - name: Tzu-Yau Chuang
+    type: MSc
+    year: 2009
+    title: Freight Flow optimization for shipping lines
+  - name: Zhiting Tao
+    type: MSc
+    year: 2009
+    title: Berth allocation and its economic evaluation
+  - name: James Pocknell
+    type: MEng
+    year: 2009
+    title: Container port gate systems
+  - name: Melina Zarouka
+    type: MSc
+    year: 2008
+    title: Bus scheduling under uncertain conditions
+  - name: Richard Stagg
+    type: MEng
+    year: 2008
+    title: AGV Dispatching using mTSP algorithms
+  - name: Tarun Rao
+    type: MEng
+    year: 2007
+    title: Robustness of the container shipping network
+  - name: Indragura Win
+    type: MEng
+    year: 2007
+    title: Vehicle routing in AGV systems
+  - name: Simon Fayer
+    type: UROP
+    year: 2006
+    title: Development of a 3D container flow model

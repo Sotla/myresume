@@ -1,0 +1,60 @@
+aca_posts:
+  - org_name: Imperial College London
+    org_location: United Kingdom
+    roles:
+    - position_name: Senior Lecturer in Transport Systems and Logistics
+      position_from: Aug 2016
+      position_to: present
+    - position_name: Lecturer in Urban Engineering Systems
+      position_from: Jun 2012
+      position_to: Jul 2016
+      subroles: 
+      - Director, Port Operations Research and Technology Centre (PORTeC)
+      - Director, Intelligent Infrastructure & Transport Systems Laboratory (IITS)
+      - Deputy Teaching Director, MSc in Transport
+      - Member, Centre for Systems Engineering and Innovations
+      - Member, Institute for Security Science and Technology
+      - Member, Imperial Robotics Forum
+    - position_name: Research Associate
+      position_from: Nov 2009
+      position_to: May 2012
+    - position_name: Research Assistant
+      position_from: Nov 2008
+      position_to: May 2009  
+      subroles: 
+      - Visiting Lecturer, Imperial College Business School
+      - Graduate Teaching Assistant, Dept. of Civil & Environmental Engineering
+  - org_name: Kyoto University
+    org_location: Japan
+    roles:
+      - position_name: JSPS Research Fellow
+        position_from: Mar
+        position_to: Jun 2013                         
+
+pro_posts:
+  - org_name: Imperial College Consultants Ltd
+    org_location: London, United Kingdom
+    roles:
+    - position_name: Research Consultant
+      position_from: Sep 2006
+      position_to: present 
+  - org_name: United Nations
+    org_location: Geneva, Switzerland
+    roles:
+    - position_name: Graduate Intern
+      position_from: May
+      position_to: Aug 2006 
+  - org_name: P&O Ports
+    org_location: Southampton, United Kindom
+    roles:
+    - position_name: Analyst
+      position_from: Jul
+      position_to: Sep 2005     
+
+pro_affiliations:
+  - organisation: Chartered Institute of Logistics and Transport
+    title: Chartered Member
+  - organisation: Technical Chamber of Greece
+    title: Chartered Civil Engineer
+  - organisation: Operational Research Society
+    title: Member

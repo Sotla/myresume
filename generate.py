@@ -13,6 +13,7 @@ import os
 import sys
 import yaml
 import shutil
+import glob
 import tex
 import re
 from shutil import copyfile
@@ -55,10 +56,6 @@ def get_cmd_line_args():
         default='output',
         help="Output directory of generated files. Defaults to output/")
 
-    parser.add_option("-s", "--source",
-        default='data/resume.yaml',
-        help="Filename of the resume YAML source. Defaults to resume.yaml")
-
     parser.add_option("-t", "--template",
         default='templates/resume.%s.tmpl',
         help="Filename of the output format template. Defaults to templates/resume.<extension>.tmpl")
@@ -73,7 +70,11 @@ def get_cmd_line_args():
 
 if __name__ == '__main__':
     options, extension = get_cmd_line_args()
-    contents = yaml.load(open(options.source, 'r').read())
+    contents = dict()
+
+    for fname in glob.glob('data/*.yaml'):
+            contents.update(yaml.load(open(fname, 'r').read()))
+
 
     escaped_contents = escape_leaves(escape_tex, contents)
     template = Template(file=options.template % extension, searchList=[escaped_contents])
