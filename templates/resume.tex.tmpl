@@ -9,7 +9,7 @@ directiveStartToken = !
 \oddsidemargin -.5in
 \evensidemargin -.5in
 \textwidth=6.0in
-\textheight=10in
+\textheight=10.3in
 \topmargin -0.4in
 \itemsep=0in
 \parsep=0in
@@ -46,8 +46,6 @@ directiveStartToken = !
 
 \begin{document}
 
-\vspace*{0in}
-
 \moveleft.7\hoffset\centerline{\LARGE\bf Panagiotis Angeloudis}
 
 \vspace{.05in}\moveleft.7\hoffset\centerline{\small PHD, MEng, DIC, ACGI, MCILT}
@@ -56,7 +54,7 @@ directiveStartToken = !
 \moveleft.7\hoffset\centerline{\large{ Senior Lecturer in Transport Systems \& Logistics}}
 
 \begin{resume}
-\vspace{-.2in}\small\textit{Last updated: \today}
+\moveleft.7\hoffset\centerline{\small\textit{Last updated: \today}}
 
 \section{\sc Contact Information}
 \begin{tabular}{@{}p{3in}p{0.3in}p{3in}}
@@ -68,7 +66,7 @@ London, SW7 2BU, United Kingdom                   & {\it web:}   & imperial.ac.u
 
 \end{tabular}
 
-\section{\sc Research Interests}
+\section{\sc Research\\ Interests}
 Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
 Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
@@ -87,6 +85,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!end if
 !end for
 
+\vspace{-0.20in}
 \section{\sc Professional\\ Positions}
 !for ;entry in ;pro_posts
 	{\bf ;entry.org_name}, ;entry.org_location \\
@@ -102,16 +101,19 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!end if
 !end for
 
+\vspace{-0.20in}
 \section{\sc Proffesional\\ Affiliations}
 !for ;entry in ;pro_affiliations
     {\bf ;entry.title} ;entry.organisation\\
 !end for
 
+\vspace{-0.20in}
 \section{\sc Education}
 {\bf Imperial College London}, United Kingdom\\
 \textit{PhD in Transport Engineering} \hfill {\bf Oct 2005 - Nov 2009}\\
 \textit{MEng in Civil \& Enviornmnetal Engineering (First Class Honours)} \hfill {\bf Oct 2001 - Jun 2005}\\
 
+\vspace{-0.20in}
 \section{\sc Research\\ Grants}
 !set ;sumtext=0
 !for ;entry in ;research_grants
@@ -165,6 +167,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\\
 !end for
 
+\vspace{-0.15in}
 \section{\sc Postoctoral\\ Researchers}
 !for ;entry in ;postdocs
 	\vspace{0.03in}
@@ -175,8 +178,9 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\\
 !end for
 
-
+\vspace{-0.10in}
 \section{\sc Research\\ Contributions}
+\vspace{0.05in}
 !for ;entry in ;research_contib
 	\begin{minipage}{\textwidth}
 	{\bf ;entry.area} \\
@@ -191,7 +195,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\\
 !end for
 
-
+\vspace{-0.15in}
 \section{\sc PhD Candidate\\ Examinations}
 !for ;entry in ;phdexams
 	\begin{minipage}{\textwidth}
@@ -205,8 +209,9 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	{\bf ;entry.progamme},\textit{;entry.role} \hfill {\bf ;entry.years}\\
 !end for
 
-
+\vspace{-0.15in}
 \section{\sc Student\\ Supervision}
+\vspace{0.15in}
 !set ;minfrom = 9999
 !set ;minto = 0
 !silent import copy

@@ -1,55 +1,55 @@
 research_contib:
-    - area: Grant Proposal Reviews
-      items:
-        - Royal Society (United Kingdom)
-        - Japanese Society for the Promotion of Science (Japan)
-        - Archimedes & Thales Funding Programmes (Greece)
-        - Research Financing Directorate (Romania)
-    - area: Journal Manuscripts Reviews
-      items:
-         - Accident Analysis and Prevention
-         - Advanced Engineering Informatics
-         - Advanced Transportation
-         - Computers & Operations Research
-         - Engineering Applications of Artificial Intelligence
-         - Flexible Services and Manufacturing
-         - IEEE Transactions on Automation Science and Engineering
-         - Industrial Engineering, Theory, Applications & Practice
-         - Maritime Policy and Management
-         - Operations Research
-         - Physica A
-         - Science of the Total Environment
-         - Transportation
-         - Transportation Planning and Technology
-         - Transportation Research Part A 
-         - Transportation Research Part B 
-         - Transportation Research Part C
-         - Transportation Research Part D 
-         - Transportation Research Part E
-         - Transportmetrica A
-    - area: Conference Manuscript Reviews
-      items:
-        - International Network Operations Conference
-        - Transport Research Board Annual Meeting 
-        - International IEEE Annual Conference on Intelligent Transportation Systems
-        - Logistics and Maritime Systems
+  - area: Grant Proposal Reviews
+    items:
+      - Royal Society (United Kingdom)
+      - Japanese Society for the Promotion of Science (Japan)
+      - Archimedes & Thales Funding Programmes (Greece)
+      - Research Financing Directorate (Romania)
+  - area: Journal Manuscripts Reviews
+    items:
+       - Accident Analysis and Prevention
+       - Advanced Engineering Informatics
+       - Advanced Transportation
+       - Computers & Operations Research
+       - Engineering Applications of Artificial Intelligence
+       - Flexible Services and Manufacturing
+       - IEEE Transactions on Automation Science and Engineering
+       - Industrial Engineering, Theory, Applications & Practice
+       - Maritime Policy and Management
+       - Operations Research
+       - Physica A
+       - Science of the Total Environment
+       - Transportation
+       - Transportation Planning and Technology
+       - Transportation Research Part A 
+       - Transportation Research Part B 
+       - Transportation Research Part C
+       - Transportation Research Part D 
+       - Transportation Research Part E
+       - Transportmetrica A
+  - area: Conference Manuscript Reviews
+    items:
+      - International Network Operations Conference
+      - Transport Research Board Annual Meeting 
+      - International IEEE Annual Conference on Intelligent Transportation Systems
+      - Logistics and Maritime Systems
 
 phdexams:
-    - name: Dr Sophie Damy
-      institution: Imperial College London
-      year: 2017
-    - name: Dr Mirreile El Hajj
-      institution: Imperial College London
-      year: 2017
-    - name: Dr Rui Sha
-      institution: University College London
-      year: 2017
-    - name: Dr Kuang-Chang Pien
-      institution: Imperial College London
-      year: 2015
-    - name: Dr Enrique Martin Alcade
-      institution: Universitat Politechnica de Catalonia
-      year: 2014
+  - name: Dr Sophie Damy
+    institution: Imperial College London
+    year: 2017
+  - name: Dr Mirreile El Hajj
+    institution: Imperial College London
+    year: 2017
+  - name: Dr Rui Sha
+    institution: University College London
+    year: 2017
+  - name: Dr Kuang-Chang Pien
+    institution: Imperial College London
+    year: 2015
+  - name: Dr Enrique Martin Alcade
+    institution: Universitat Politechnica de Catalonia
+    year: 2014
 
 teaching_contib:
   - progamme: MSc in Transport

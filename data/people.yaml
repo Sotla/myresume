@@ -268,3 +268,29 @@ taughtstudents:
     type: UROP
     year: 2006
     title: Development of a 3D container flow model
+  - name: Liu Qingyun
+    year: 2018
+    type: MSc
+    title: Electric Truck Routing Problem with Recharging Stations    
+  - name: Yak Sin Wen
+    year: 2018
+    type: MSc    
+    title: Modelling Isolated Intersections in a Mixed Driving Environment with Pedestrians
+  - name: Murat Imashev
+    year: 2018
+    type: MSc    
+    title: Efficiency of vessel to vessel transfers in ocean transport
+  - name: Zhou Wan
+    year: 2018
+    type: MSc    
+    title: Interaction between ridesharing and public transport
+  - name: Shan Jiawen
+    year: 2018
+    type: MSc
+    title: Autonomous Delivery for Short Distance
+
+
+
+
+
+
