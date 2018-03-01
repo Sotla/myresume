@@ -97,6 +97,9 @@ if __name__ == '__main__':
     os.system("bibtex resume")
     os.system("pdflatex resume.tex")
     os.system("pdflatex resume.tex")
+
+    copyfile("resume.pdf","CV-Angeloudis.pdf")
+
     
 
 

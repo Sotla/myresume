@@ -9,13 +9,13 @@ directiveStartToken = !
 \oddsidemargin -.5in
 \evensidemargin -.5in
 \textwidth=6.0in
-\textheight=10.4in
+\textheight=9.5in
 \topmargin -0.4in
 \itemsep=0in
 \parsep=0in
 
 %\Bibliography
-
+\usepackage{enumitem}
 \usepackage{csquotes}
 \usepackage[url=false, defernumbers=true, maxnames=10,sortcites,backend=bibtex,sorting=ydnt]{biblatex}
 \renewbibmacro{in:}{}
@@ -67,7 +67,7 @@ London, SW7 2BU, United Kingdom                   & {\it web:}   & imperial.ac.u
 
 \section{\sc Research Interests}
 Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
-Algorithmic Game Theory, Metaheuristics, Agent Based Simulation
+Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \section{\sc Academic\\ Positions}
 !for ;entry in ;aca_posts
@@ -99,16 +99,15 @@ Algorithmic Game Theory, Metaheuristics, Agent Based Simulation
 	!end if
 !end for
 
-\section{\sc Education}
-{\bf Imperial College London}, United Kingdom\\
-\textit{PhD in Transport Engineering} \hfill {\bf Oct 2005 - Nov 2009}\\
-\textit{MEng in Civil \& Enviornmnetal Engineering (First Class Honours)} \hfill {\bf Oct 2001 - Jun 2005}\\
-
-
 \section{\sc Proffesional\\ Affiliations}
 !for ;entry in ;pro_affiliations
     {\bf ;entry.title} ;entry.organisation\\
 !end for
+
+\section{\sc Education}
+{\bf Imperial College London}, United Kingdom\\
+\textit{PhD in Transport Engineering} \hfill {\bf Oct 2005 - Nov 2009}\\
+\textit{MEng in Civil \& Enviornmnetal Engineering (First Class Honours)} \hfill {\bf Oct 2001 - Jun 2005}\\
 
 \section{\sc Research\\ Grants}
 !set ;sumtext=0
@@ -163,6 +162,17 @@ Algorithmic Game Theory, Metaheuristics, Agent Based Simulation
 	\\
 !end for
 
+\section{\sc Postoctoral\\ Researchers}
+!for ;entry in ;postdocs
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf ;entry.name} \hfill {\bf ;entry.from - ;entry.to} \\
+	\tab[0.2in] \textit{;entry.project}
+	\end{minipage}
+	\\
+!end for
+
+
 \section{\sc Research\\ Contributions}
 !for ;entry in ;research_contib
 	\begin{minipage}{\textwidth}
@@ -178,29 +188,101 @@ Algorithmic Game Theory, Metaheuristics, Agent Based Simulation
 	\\
 !end for
 
+
+\section{\sc PhD Candidate\\ Examinations}
+!for ;entry in ;phdexams
+	\begin{minipage}{\textwidth}
+	{\bf ;entry.name} \textit{(;entry.institution)} \hfill {\bf ;entry.year}
+	\vspace{0.03in}
+	\end{minipage}
+!end for
+
 \section{\sc Teaching\\ Contributions}
 !for ;entry in ;teaching_contib
 	{\bf ;entry.progamme},\textit{;entry.role} \hfill {\bf ;entry.years}\\
 !end for
 
 
-
-\section{\sc {Publications}}
+\section{\sc Student\\ Supervision}
+!set ;minfrom = 9999
+!set ;minto = 0
+!silent import copy
+!silent taughtlist = list(copy.deepcopy(;taughtstudents))
+%%%%%%%%%%%%%%%%%%%%%%%%%
+!for ;entry in ;taughtlist
+	!if int(;entry.year) < int(;minfrom)
+		!set ;minfrom = ;entry.year
+	!end if
+	!if int(;entry.year) > int(;minto)
+		!set ;minto = ;entry.year
+	!end if
+!end for
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!set ;currentyear = ;minto
+!while int(;currentyear) >= ;int(;minfrom)
+	{\bf;currentyear }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	!set ;temp = ""
+	!for ;entry in ;taughtlist 
+		!if (;entry.type=="MSc" and int(;entry.year) == int(;currentyear))
+			!set ;temp= ;temp + str(;entry.name) +", " 
+		!end if
+	!end for
+	!set ;temp = ;temp[:-2]
+	!if ;len(temp) > 0
+		MSc: ;temp 
+	!end if 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	!set ;temp = ""
+	!for ;entry in ;taughtlist 
+		!if (;entry.type=="MEng" and int(;entry.year) == int(;currentyear))
+			!set ;temp= ;temp + str(;entry.name) +", " 
+		!end if
+	!end for
+	!set ;temp = ;temp[:-2]
+	!if ;len(temp) > 0
+		MEng: ;temp 
+	!end if
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	!set ;temp = ""
+	!for ;entry in ;taughtlist 
+		!if (;entry.type=="UROP" and int(;entry.year) == int(;currentyear))
+			!set ;temp= ;temp + str(;entry.name) +", " 
+		!end if
+	!end for
+	!set ;temp = ;temp[:-2]
+	!if ;len(temp) > 0
+		UROP: ;temp 
+	!end if
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	!set ;currentyear = int(;currentyear)-1
+	\\
+!end while
 
 \nocite{*}
-
 \section{\sc {Publications}}
 \printbibliography[heading=none,type=article,resetnumbers=true]
 
 \section{\sc {Book Chapters}}
 \printbibliography[heading=none,type=book,resetnumbers=true]
 
-\section{\sc {Conference\\ Proceedings}}
+\section{\sc {Conferences}}
+\begin{enumerate}[label={[\arabic*] \vspace{0.3in}}]
+!for ;entry in ;conferences
+	\item
+	{;entry.authors}. "{;entry.title}". \textit{;entry.conference} (;entry.year), ;entry.location, ;entry.country
+!end for
+\end{enumerate}
 
+\section{\sc {Invited Talks}}
+\begin{enumerate}[label={[\arabic*] \vspace{0.3in}}]
+!for ;entry in ;invitedtalks
+	\item
+	;entry.organisation (;entry.year).\textit{"{;entry.title}"} ;entry.location, ;entry.country
+!end for
+\end{enumerate}
 
 \end{resume}
 \end{document}
-
-
 
 
