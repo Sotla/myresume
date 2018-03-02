@@ -1,25 +1,56 @@
 conferences:
+  - title: A flow-based resilience assessment method for interdependent urban infrastructure networks
+    year: 2018
+    code: P18B
+    authors: Goldbeck N, Angeloudis P and Ochieng WY
+    conference: International Conference on Infrastructure Resilience
+    location: Zurich
+    country: Switzerland   
+  - title: A flow-based resilience assessment method for interdependent urban infrastructure networks
+    year: 2018
+    code: P18A
+    authors: Goldbeck N, Angeloudis P and Ochieng WY
+    conference: International Conference on Infrastructure Resilience
+    location: Zurich
+    country: Switzerland
+  - title: Modelling the Dynamics of Asset Operability and Network Flows in Interdependent Infrastructure Systems after Disruptive Events
+    year: 2017
+    code: P17I
+    authors: Goldbeck N, Angeloudis P and Ochieng WY
+    conference: International Conference on Dynamics of Disasters 
+    location: Kalamata
+    country: Greece   
+  - title: A dynamic network flow model for interdependent infrastructure and supply chain networks with uncertain asset operability
+    year: 2017
+    code: P17H
+    authors: Goldbeck N, Angeloudis P and Ochieng WY
+    conference: International Conference on Computational Logistics 
+    location: Southampton
+    country: United Kingdom    
   - title: Supply Chain Design for Modular Construction Projects
     year: 2017
     authors: Hsu PY, Aurisicchio M and Angeloudis P
     conference: LC3 
+    code: P17G    
     location: Heraklion
     country: Greece
   - title: Establishing outsourcing and supply chain plans for prefabricated construction projects under uncertain productivity
     year: 2017
     authors: Hsu PY, Aurisicchio M and Angeloudis P
+    code: P17F    
     conference: ICCL 
     location: Southampton
     country: United Kingdom
   - title: Investigating Schedule Deviation in Construction Projects through Root Cause Analysis
     year: 2017
     authors: Hsu PY, Aurisicchio M and Angeloudis P
+    code: P17E   
     conference: ProjMan 
     location: Barcelona
     country: Spain
   - title: Rapid Urban Evacuation across Constrained Transport Networks
     year: 2017
-    code: P17B
+    code: P17D
     authors: Escribano J, Angeloudis P and Ochieng W
     conference: TRB 
     location: Washington
@@ -27,10 +58,17 @@ conferences:
   - title: Intermodal container transport vulnerability 
     year: 2017
     code: P17C
-    authors: Angeloudis P, Hu S
+    authors: Angeloudis P, Hu S, Achurra-Gonzalez P
     conference: LOGMS 
     location: Bergen
     country: Norway
+  - title: Integrated Trajectory Optimisation and Location‐Routing Method for Rapid Medical Deliveries using Unmanned Aerial Vehicles (UAVs)
+    year: 2017
+    code: P17B  
+    authors: Escribano J, Angeloudis P and Ochieng WY
+    conference: Dynamics of Disasters 
+    location: Kalamata
+    country: Greece   
   - title: Joint Vulnerability Analysis of Urban Rail Transit and Utility Networks
     year: 2016
     code: P16A
@@ -48,7 +86,7 @@ conferences:
   - title: A quantitative framework for the assessment of network vulnerability in liner shipping networks
     year: 2016
     code: P16C
-    authors: Achurra-Gonzales P and Angeloudis P
+    authors: Achurra-Gonzalez P and Angeloudis P
     conference: TRB 
     location: Washington
     country: United States
@@ -73,7 +111,7 @@ conferences:
     conference: TRB 
     location: Washington
     country: United States
-  - title: The environmental balance of vessel emission strategies
+  - title: Analysing World Events Using the GDELT dataset and Google BigQuery
     year: 2016
     code: P16G
     authors: Niknejad A, Angeloudis A, Achurra-Gonzalez  P and Tsigkakos V
@@ -87,6 +125,19 @@ conferences:
     conference: WCTR 
     location: Shanghai
     country: China
+  - title: Attacker-defender modelling of transport vulnerability in maritime logistics corridors
+    year: 2016
+    code: WIMAKS
+    authors: Achurra-Gonzalez  P, Angeloudis A, Niknejad A, Graham D
+    conference: 2nd International Workshop on Maritime Flows and Networks
+    location: Paris
+    country: France  
+  - title: Maritime Networks Flows and Games
+    year: 2016
+    authors: Angeloudis P
+    conference: 2nd International Workshop on Maritime Flows and Networks
+    location: Paris
+    country: France    
   - title: Urban resilience modelling using network flows
     year: 2015
     code: P15A
@@ -110,7 +161,7 @@ conferences:
     country: United States
   - title: Regional conflicts and impact of liner shipping
     year: 2015
-    authors: Achurra-Gonzales P and Angeloudis P
+    authors: Achurra-Gonzalez P and Angeloudis P
     conference: GPRA 
     location: PolyU
     country: Hong Kong

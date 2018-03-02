@@ -16,31 +16,49 @@ directiveStartToken = !
 
 %\Bibliography
 \usepackage{enumitem}
+\usepackage{etaremune}								%reverse numbering
 \usepackage{csquotes}
 \usepackage[url=false, defernumbers=true, maxnames=10,sortcites,backend=bibtex,sorting=ydnt]{biblatex}
 \renewbibmacro{in:}{}
 
-\bibliography{publications.bib}
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot}	%change the biblatex numbering style from [1] to 1.
 
-\makeatletter
-\renewenvironment{thebibliography}[1]
-     {\list{\@biblabel{\@arabic\c@enumiv}}%
-           {\settowidth\labelwidth{\@biblabel{#1}}%
-            \leftmargin\labelwidth
-            \advance\leftmargin\labelsep
-            \@openbib@code
-            \usecounter{enumiv}%
-            \let\p@enumiv\@empty
-            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-      \sloppy
-      \clubpenalty4000
-      \@clubpenalty \clubpenalty
-      \widowpenalty4000%
-      \sfcode`\.\@m}
-     {\def\@noitemerr
-       {\@latex@warning{Empty `thebibliography' environment}}%
-      \endlist}
-\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
+
+\AtDataInput[article]
+{%
+	\xifinlistcs
+	{\thefield{entrykey}}
+	{entrylist:\therefsection}{}
+ 	{%
+	  	\listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
+	  	\csnumgdef{articleentrycount:\therefsection}{%
+	    \csuse{articleentrycount:\therefsection}+1}
+	}
+}
+
+\DeclareFieldFormat[article]{labelnumber}{\mkbibarticledesc{#1}}
+
+\newrobustcmd*{\mkbibarticledesc}[1]{%
+   J\number\numexpr\csuse{articleentrycount:\therefsection}+1-#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
+
+\AtDataInput[book]{%
+ \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
+  \listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
+  \csnumgdef{bookentrycount:\therefsection}{%
+      \csuse{bookentrycount:\therefsection}+1}}}
+
+\DeclareFieldFormat[book]{labelnumber}{\mkbibbookdesc{#1}}
+
+\newrobustcmd*{\mkbibbookdesc}[1]{%
+   B\number\numexpr\csuse{bookentrycount:\therefsection}+1-#1\relax}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{publications.bib}
 
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
@@ -287,20 +305,22 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \printbibliography[heading=none,type=book,resetnumbers=true]
 
 \section{\sc {Conferences}}
-\begin{enumerate}[label={[\arabic*] \vspace{0.3in}}]
+\begin{etaremune}
+\renewcommand\labelenumi{C\theenumi. }
 !for ;entry in ;conferences
 	\item
 	{;entry.authors}. "{;entry.title}". \textit{;entry.conference} (;entry.year), ;entry.location, ;entry.country
 !end for
-\end{enumerate}
+\end{etaremune}
 
 \section{\sc {Invited Talks}}
-\begin{enumerate}[label={[\arabic*] \vspace{0.3in}}]
+\begin{etaremune}
+\renewcommand\labelenumi{T\theenumi. }
 !for ;entry in ;invitedtalks
 	\item
 	;entry.organisation (;entry.year).\textit{"{;entry.title}"} ;entry.location, ;entry.country
 !end for
-\end{enumerate}
+\end{etaremune}
 
 \end{resume}
 \end{document}

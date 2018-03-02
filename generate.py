@@ -25,7 +25,6 @@ def escape_tex(s):
     s = HYPERLINK_REGEX.sub(r'\href{\2}{\1}', s)
     s = tex.escape_latex(s)
     s = s.replace('LaTeX', r'\LaTeX')
-
     # A bit of a hack... have to reverse some of tex.escape_latex escapes
     s = s.replace('\\textbackslash{}', '\\')
     s = s.replace('\\{', '{').replace('\\}', '}')
@@ -86,7 +85,6 @@ if __name__ == '__main__':
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-
 
 
     open('%s/resume.%s' % (output_dir, extension), 'w').write(str(template))
