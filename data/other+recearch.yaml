@@ -5,6 +5,7 @@ research_contib:
       - Japanese Society for the Promotion of Science (Japan)
       - Archimedes & Thales Funding Programmes (Greece)
       - Research Financing Directorate (Romania)
+      - Freight Mobility Research Institute (United States)
   - area: Journal Manuscripts Reviews
     items:
        - Accident Analysis and Prevention
@@ -54,6 +55,26 @@ phdexams:
     institution: Universitat Politechnica de Catalonia
     year: 2014
 
+ext_committees:
+  - organisation: LOGMS Scientific Advisory Committee
+    dates: 2016 - Present
+    description: Elected Member  
+  - organisation: Ports and Channels Committee, Transportation Research Board    
+    dates: 2014 - Present
+    description: Research Coordinator, Committee Member
+  - organisation: UK Government Office of Science (UK-GoS)
+    dates: 2017 - 2018
+    description: Advisor, Future of Mobility Programme
+  - organisation: UK Department for International Development (DFID)
+    dates: 2017 - 2018
+    description: Technical Advisory Panel, Applied Research Programme in High Volume Transport  
+  - organisation: PIANC - World Association for Waterborne Transport Infrastructure
+    dates: 2016 - 2017
+    description: UK Representative - Task Group 193, Resilience of Port and Maritime Infrastructure
+  - organisation: National Planning Department, Colombia
+    dates: 2016
+    description: Advisor, National Logistics Masterplan
+
 teaching_contib:
   - progamme: MSc in Transport
     role: Deputy Teaching Director
@@ -73,3 +94,16 @@ teaching_contib:
   - progamme: Advanced Programming for Finance
     role: Module Coordinator
     years: 2009-2012
+
+
+media_coverage:
+  - date: September 2018
+    org: Associated Press
+    title: Mercedes partners with robot firm to create delivery robots
+    link: http://www.aparchive.com/metadata/-TT-UK-Delivery-Robot/18f1ff79ebb89afa28c7addd1e7e26be
+  - date: March 2013
+    org: Kathimerini
+    title: Research Spotlight - Panagiotis Angeloudis
+    link: http://www.kathimerini.gr/69853/article/epikairothta/ereynes/panagiwths-aggeloydhs
+
+
