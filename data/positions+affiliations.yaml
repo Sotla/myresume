@@ -58,3 +58,26 @@ pro_affiliations:
     title: Chartered Civil Engineer
   - organisation: Operational Research Society
     title: Member
+
+ext_committees:
+ # - organisation: UK Department for Transport (DfT)
+ #   dates: 2018 - Present
+ #   description: Expert Panel, Maritime 2050
+  - organisation: LOGMS Scientific Advisory Committee
+    dates: 2016 - Present
+    description: Elected Member  
+  - organisation: Ports and Channels Committee, Transportation Research Board    
+    dates: 2014 - Present
+    description: Research Coordinator, Committee Member
+  - organisation: UK Government Office of Science (UK-GoS)
+    dates: 2017 - 2018
+    description: Advisor, Future of Mobility Programme
+  - organisation: UK Department for International Development (DFID)
+    dates: 2017 - 2018
+    description: Technical Advisory Panel, Applied Research Programme in High Volume Transport  
+  - organisation: PIANC - World Association for Waterborne Transport Infrastructure
+    dates: 2016 - 2017
+    description: UK Representative - Task Group 193, Resilience of Port and Maritime Infrastructure
+  - organisation: National Planning Department, Colombia
+    dates: 2016
+    description: Advisor, National Logistics Masterplan

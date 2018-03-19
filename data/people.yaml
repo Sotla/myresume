@@ -1,63 +1,77 @@
 phd_students:
-  - name: Haughton, Tim
+  - name: Tim Haughton
     title: Optimisation of prefabricated construction
+    url: https://www.imperial.ac.uk/people/timothy.haughton13
     from: 2017
     to: Present
-  - name: Jayum, Kimberly
+  - name: Kimberly Jayum
     title: Risk of Autonomous Vehicle Operations
+    url: https://www.imperial.ac.uk/people/k.jayum15
     from: 2016
     to: Present
-  - name: Hsu, Leo 
+  - name: Leo Leo 
     title: Flexible design of supply chains in the construction industry
+    url: http://www.imperial.ac.uk/people/p.hsu15
     from: 2015
     to: Present
-  - name: Escribano, Jose
+  - name: Jose Escribano Macias
     title: Strategic planning of post-disaster infrastructure repairs
+    url: https://www.imperial.ac.uk/people/jose.escribano-macias11
     from: 2015
     to: Present
-  - name: Karamanis, Renos
+  - name: Renos Karamanis
+    url: https://www.imperial.ac.uk/people/renos.karamanis10
     title: Infrastructure Resilience Modelling
     from: 2015
     to: Present
-  - name: Goldbeck, Nils
+  - name: Nils Goldbeck
     title: Development of Urban Infrastructure resilience models
+    url: https://www.imperial.ac.uk/people/n.goldbeck14
     from: 2014
     to: Present
-  - name: Seo, Jung-Yong 
+  - name: Nina Jirouskova
+    title: Quantitative analysis of container terminal recoveries from natural disasters
+    url: http://www.imperial.ac.uk/sustainable-civil-engineering/ongoingresearch/cohort-1-students/ninajirouskova/
+    from: 2014
+    to: Present
+  - name: Jung-Yong Seo 
+    url: https://www.imperial.ac.uk/people/jung-yong.seo12
     title: Integrated routing and scheduling of free-ranging Automated Guided Vehicles
     from: 2014
     to: Present
-  - name: Achurra, Pablo 
-    title: Resilience of the global liner shipping network.
+  - name: Dr Pablo Achurra 
+    title: Resilience of the global liner shipping network
+    now: Researcher at Imperial College
+    url: http://www.imperial.ac.uk/people/p.achurra-gonzalez
     from: 2013
     to: 2017
-  - name: Sang, Wenlong 
+  - name: Dr Wenlong Sang 
     title: Reliability of highway network architectures
     from: 2012
     to: 2016
-  - name: Thalis Zis
+  - name: Dr Thalis Zis
     title: Environmental impact of port operations
     from: 2012
     to: 2015
     now: Researcher in DTU Management Engineering
     url: http://www.dtu.dk/english/service/phonebook/person?id=105095&tab=2&qt=dtupublicationquery
-  - name: Noye, Sarah
+  - name: Dr Sarah Noye
     title: Improved building services commissioning using wireless sensor networks
     from: 2011
     to: 2016
     now: Researcher in Smart Buildings and Cities at TECNALIA Research & Innovation
     url: https://www.linkedin.com/in/sarah-noye/
-  - name: Rochau, Normen
+  - name: Dr Normen Rochau
     title: Capacity constraints in public transportation
     from: 2009
     to: 2013
     now: Engineer in PTV AG
-  - name: Nikhalat, Hamed
+  - name: Dr Hamed Nikhalat
     title: An operational model for LNG spot and arbitrage sales
     from: 2008
     to: 2012
     now: Researcher at INESCTEC
-  - name: Liu, Xin
+  - name: Dr Xin Liu
     title: Port choice, a frequency-based container assignment model
     from: 2008
     to: 2012
@@ -66,31 +80,36 @@ postdocs:
   - name: Dr Mino Woo
     project: Emissions-based vehicle pricing models
     from: 2017
-    to: present
+    to: Present
   - name: Dr Pablo Achurra-Gonzalez
     project: Kinetic Energy Recovery Systems for Freight Vehicles
+    url: http://www.imperial.ac.uk/people/p.achurra-gonzalez
     from: 2017
-    to: present
+    to: Present
   - name: Dr Juan Marcos Garcia de la Cruz Lopez
     project: Kinetic Energy Recovery Systems for Freight Vehicles
     from: 2016
     to: 2017
     now: Data Scientist at McLaren Racing
-    URL: https://www.linkedin.com/in/juan-marcos-garc%C3%ADa-de-la-cruz-l%C3%B3pez-25b19b89/
-  - name: Niknejad, Ali
+    url: https://www.linkedin.com/in/juan-marcos-garc%C3%ADa-de-la-cruz-l%C3%B3pez-25b19b89/
+  - name: Dr Ali Niknejad
     project: Maritime Shipbroking Platforms
+    now: Senior Software Developer ar McLaren Racing
+    url: https://www.linkedin.com/in/ali-niknejad-ph-d-41259a41/
     from: 2015
     to: 2016
-  - name: Hu, Simon
+  - name: Dr Simon Hu
     project: Vehicle Emissions Monitoring and Simulation
+    url: https://www.linkedin.com/in/simon-hu-26565911/
     from: 2015
     to: 2017
-  - name: Anvari, Bani
+  - name: Dr Bani Anvari
     project: DfMA for Nuclear Construction
+    url: https://bani-anvari.com/
     from: 2013
     to: 2016
     now: Lecturer in Intelligent Mobility at University College London
-  - name: Ye, Hao
+  - name: Dr Hao Ye
     project: Spatial Models for Urban Resilience
     from: 2013
     to: 2014

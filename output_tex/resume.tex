@@ -1,0 +1,938 @@
+
+\documentclass[margin]{res}
+
+\newsectionwidth{1.2in}
+
+\oddsidemargin -.6in
+\evensidemargin -.6in
+\textwidth=6.5in
+\textheight=10in
+\topmargin -0.4in
+\footskip 0.2in
+\itemsep=0in
+\parsep=0in
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\lfoot{\hspace{-1.3in} Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+
+\hfuzz=3pt  	%suppresses overfull hbox errors
+\hbadness=10000
+
+
+%\Bibliography
+\usepackage{enumitem}
+\usepackage{etaremune}								%reverse numbering
+\usepackage{csquotes}
+\usepackage[hidelinks,bookmarks=true]{hyperref}
+\usepackage[numbered]{bookmark}
+\usepackage[url=false, defernumbers=true, maxnames=10,sortcites,backend=bibtex,sorting=ydnt]{biblatex}
+\renewbibmacro{in:}{}
+
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot}	%change the biblatex numbering style from [1] to 1.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
+
+\AtDataInput[article]
+{%
+	\xifinlistcs
+	{\thefield{entrykey}}
+	{entrylist:\therefsection}{}
+ 	{%
+	  	\listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
+	  	\csnumgdef{articleentrycount:\therefsection}{%
+	    \csuse{articleentrycount:\therefsection}+1}
+	}
+}
+
+\DeclareFieldFormat[article]{labelnumber}{\mkbibarticledesc{#1}}
+
+\newrobustcmd*{\mkbibarticledesc}[1]{%
+   J\number\numexpr\csuse{articleentrycount:\therefsection}+1-#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
+
+\AtDataInput[book]{%
+ \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
+  \listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
+  \csnumgdef{bookentrycount:\therefsection}{%
+      \csuse{bookentrycount:\therefsection}+1}}}
+
+\DeclareFieldFormat[book]{labelnumber}{\mkbibbookdesc{#1}}
+
+\newrobustcmd*{\mkbibbookdesc}[1]{%
+   B\number\numexpr\csuse{bookentrycount:\therefsection}+1-#1\relax}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{publications.bib}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+
+\moveleft.7\hoffset\centerline{\LARGE\bf Panagiotis Angeloudis}
+
+\vspace{.05in}\moveleft.7\hoffset\centerline{\small PHD, MEng, DIC, ACGI, MCILT}
+
+\vspace{.1in}
+\moveleft0.4\hoffset\centerline{\large{Associate Professor in Transport Systems \& Logistics} \textit{\small{(UK Senior Lecturer)}}}
+
+\begin{resume}
+\vspace{-.1in}
+\moveleft.7\hoffset\centerline{\small\textit{Last updated: \today}}
+
+\section{\sc Contact Information}
+\begin{tabular}{@{}p{3in}p{0.3in}p{3in}}
+
+Room 337, Skempton Building                       & {\it phone:} & +44 207 594 5986  \\
+Department of Civil \& Environmental Engineering  & {\it skype:} & panagiotis.angeloudis \\
+Imperial College London                           & {\it email:} & p.angeloudis@imperial.ac.uk\\
+London, SW7 2BU, United Kingdom                   & {\it web:}   & imperial.ac.uk/people/p.angeloudis \\     
+
+\end{tabular}
+
+\pdfbookmark[section]{Research Interests}{sec1}
+\section{\sc Research\\ Interests}
+Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
+Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
+
+\pdfbookmark[section]{Academic Positions}{sec2}
+\section{\sc Academic\\ Positions}
+	{\bf Imperial College London}, United Kingdom \\
+		\tab[0.2in] \textit{Senior Lecturer in Transport Systems and Logistics} \hfill {\bf Aug 2016 - present}\\
+		\tab[0.2in] \textit{Lecturer in Urban Engineering Systems} \hfill {\bf Jun 2012 - Jul 2016}\\
+			\tab[0.4in] Director, Port Operations Research and Technology Centre (PORTeC) \\
+			\tab[0.4in] Director, Intelligent Infrastructure \& Transport Systems Laboratory (IITS) \\
+			\tab[0.4in] Deputy Teaching Director, MSc in Transport \\
+			\tab[0.4in] Theme Leader (Resilience), Centre for Systems Engineering and Innovations \\
+			\tab[0.4in] Member, Institute for Security Science and Technology \\
+			\tab[0.4in] Member, Imperial Robotics Forum \\
+		\tab[0.2in] \textit{Research Associate} \hfill {\bf Nov 2009 - May 2012}\\
+		\tab[0.2in] \textit{Research Assistant} \hfill {\bf Nov 2008 - May 2009}\\
+			\tab[0.4in] Visiting Lecturer, Imperial College Business School \\
+			\tab[0.4in] Graduate Teaching Assistant, Dept. of Civil \& Environmental Engineering \\
+	{\bf Kyoto University}, Japan \\
+		\tab[0.2in] \textit{JSPS Research Fellow} \hfill {\bf Mar - Jun 2013}\\
+
+\vspace{-0.20in}
+\pdfbookmark[section]{Professional Positions}{sec3}
+\section{\sc Professional\\ Positions}
+	{\bf Imperial College Consultants Ltd}, London, United Kingdom \\
+		\tab[0.2in] \textit{Research Consultant} \hfill {\bf Sep 2006 - present}\\
+	{\bf United Nations}, Geneva, Switzerland \\
+		\tab[0.2in] \textit{Graduate Intern} \hfill {\bf May - Aug 2006}\\
+	{\bf P\&O Ports}, Southampton, United Kindom \\
+		\tab[0.2in] \textit{Analyst} \hfill {\bf Jul - Sep 2005}\\
+
+\vspace{-0.20in}
+\pdfbookmark[section]{Professional Affiliations}{sec4}
+\section{\sc Proffesional\\ Affiliations}
+    {\bf Chartered Member} Chartered Institute of Logistics and Transport\\
+    {\bf Chartered Civil Engineer} Technical Chamber of Greece\\
+    {\bf Member} Operational Research Society\\
+
+\vspace{-0.20in}
+\pdfbookmark[section]{Education}{sec5}
+\section{\sc Education}
+{\bf Imperial College London}, United Kingdom\\
+\textit{PhD in Transport Engineering} \hfill {\bf Oct 2005 - Nov 2009}\\
+\textit{MEng in Civil \& Enviornmnetal Engineering (First Class Honours)} \hfill {\bf Oct 2001 - Jun 2005}\\
+
+\vspace{-0.1in}
+\pdfbookmark[section]{Committees & Advisory}{ext_committees}
+\section{\sc Committees\\ \&  Advisory}
+\vspace{+0.1in}
+	\begin{minipage}{\textwidth}
+	{\bf LOGMS Scientific Advisory Committee} \hfill {\bf 2016 - Present} \\
+	\tab[0.2in] \textit{Elected Member}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Ports and Channels Committee, Transportation Research Board} \hfill {\bf 2014 - Present} \\
+	\tab[0.2in] \textit{Research Coordinator, Committee Member}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf UK Government Office of Science (UK-GoS)} \hfill {\bf 2017 - 2018} \\
+	\tab[0.2in] \textit{Advisor, Future of Mobility Programme}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf UK Department for International Development (DFID)} \hfill {\bf 2017 - 2018} \\
+	\tab[0.2in] \textit{Technical Advisory Panel, Applied Research Programme in High Volume Transport}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf PIANC - World Association for Waterborne Transport Infrastructure} \hfill {\bf 2016 - 2017} \\
+	\tab[0.2in] \textit{UK Representative - Task Group 193, Resilience of Port and Maritime Infrastructure}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf National Planning Department, Colombia} \hfill {\bf 2016} \\
+	\tab[0.2in] \textit{Advisor, National Logistics Masterplan}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
+
+\vspace{-0.20in}
+\pdfbookmark[section]{Research Grants}{sec6}
+\section{\sc Research\\ Grants}
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf A radical mode shift enabled by autonomous pods} \hfill {\bf 2018} \\
+	\tab[0.2in] \textsterling{
+299,800	}
+	\quad InnovateUK
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Sustainable demand responsive transit schemes for developing countries} \hfill {\bf 2017} \\
+	\tab[0.2in] \textsterling{
+\space\space7,500	}
+	\quad EPSRC
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf NOx emissions estimation in real time} \hfill {\bf 2017} \\
+	\tab[0.2in] \textsterling{
+301,200	}
+	\quad InnovateUK
+	\textit{(Grant code: 103304)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Optimisation of prefabricated construction (CASE)} \hfill {\bf 2017} \\
+	\tab[0.2in] \textsterling{
+\space98,000	}
+	\quad EPSRC, Rolls-Royce
+	\textit{(Grant code: 17000031)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Kinetic energy recovery for urban logistics applications (KERS-URBAN)} \hfill {\bf 2016} \\
+	\tab[0.2in] \textsterling{
+425,000	}
+	\quad InnovateUK
+	\textit{(Grant code: 103253)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Incident detection in shipping markets} \hfill {\bf 2016} \\
+	\tab[0.2in] \textsterling{
+\space18,000	}
+	\quad HEFCE
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf OVARE - Optimised Vehicle Autonomy for ride and emissions} \hfill {\bf 2015} \\
+	\tab[0.2in] \textsterling{
+160,000	}
+	\quad InnovateUK
+	\textit{(Grant code: 132275)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Strategic Network - Cities as Complex Adaptive Systems} \hfill {\bf 2015} \\
+	\tab[0.2in] \textsterling{
+\space10,160	}
+	\quad ESRC
+	\textit{(Grant code: ES/N009436/1)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Pathways to Impact – Shipbroking Optimization Platforms} \hfill {\bf 2015} \\
+	\tab[0.2in] \textsterling{
+\space74,888	}
+	\quad EPSRC
+	\textit{(Grant code: EP/K503733/1)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Digitally Enabling Electrification} \hfill {\bf 2013} \\
+	\tab[0.2in] \textsterling{
+190,000	}
+	\quad InnovateUK
+	\textit{(Grant code: 32016-235149)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Postdoctoral Research Fellowship on Infrastructure Resilience} \hfill {\bf 2013} \\
+	\tab[0.2in] \textsterling{
+\space10,000	}
+	\quad JSPS
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Optimisation of DfMA structures} \hfill {\bf 2013} \\
+	\tab[0.2in] \textsterling{
+266,000	}
+	\quad EPSRC
+	\textit{(Grant code: EP/L504683)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Clean Last mile transport and logistics management} \hfill {\bf 2011} \\
+	\tab[0.2in] \textsterling{
+107,957	}
+	\quad European Commission
+	\textit{(Grant code: IEE10154)}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Robust and Stochastic Optimisation Methods for AGVs} \hfill {\bf 2008} \\
+	\tab[0.2in] \textsterling{
+538,302	}
+	\quad EPSRC
+	\textit{(Grant code: EP/F044895)}
+	\end{minipage}
+	\\
+
+\vspace{-0.25in}
+\textit{Total research grants: \textsterling{
+2,506,807}}
+
+\pdfbookmark[section]{Research Contracts}{sec7}
+\section{\sc Research\\ Contracts}
+
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Optimisation of Prefabrication Strategies for Nuclear Construction} \hfill {\bf 2017} \\
+	\tab[0.2in] 
+	\textit{Bouygues Construction, France}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Understanding the passenger transport road network through data} \hfill {\bf 2017} \\
+	\tab[0.2in] 
+	\textit{Government Office of Science, United Kingdom}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Development of the Colombian National Logistics Masterplan} \hfill {\bf 2016} \\
+	\tab[0.2in] 
+	\textit{Ivarsson y Asociados, Colombia}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Wuhan Yangtze River Maritime Cluster Masterplan} \hfill {\bf 2016} \\
+	\tab[0.2in] 
+	\textit{National Development and Reform Commission, China}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Optimisation of construction logistics operations} \hfill {\bf 2013} \\
+	\tab[0.2in] 
+	\textit{Laing O' Rourke, United Kingdom}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf A universal infrastructure resilience assessment framework} \hfill {\bf 2012} \\
+	\tab[0.2in] 
+	\textit{ARUP, United Kingdom}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Global container shipping network modelling} \hfill {\bf 2011} \\
+	\tab[0.2in] 
+	\textit{SITI Institute, Italy}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Design and Detailed Simulation Analysis of automated check-in facilities} \hfill {\bf 2006} \\
+	\tab[0.2in] 
+	\textit{P\&O Ferries, United Kingdom}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Scoping study for the improved FORGE model} \hfill {\bf 2006} \\
+	\tab[0.2in] 
+	\textit{Department for Transport, United Kingdom}
+	\end{minipage}\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Throughput bottlenecks in container terminals} \hfill {\bf 2005} \\
+	\tab[0.2in] 
+	\textit{P\&O Ports, United Kingdom}
+	\end{minipage}\\
+
+
+
+\pdfbookmark[section]{PhD Thesis Supervision}{sec8}
+\section{\sc PhD Thesis\\ Supervision}
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Tim Haughton} \hfill {\bf 2017 - Present} \\
+	\tab[0.2in] \textit{Optimisation of prefabricated construction}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Kimberly Jayum} \hfill {\bf 2016 - Present} \\
+	\tab[0.2in] \textit{Risk of Autonomous Vehicle Operations}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Leo Leo} \hfill {\bf 2015 - Present} \\
+	\tab[0.2in] \textit{Flexible design of supply chains in the construction industry}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Jose Escribano Macias} \hfill {\bf 2015 - Present} \\
+	\tab[0.2in] \textit{Strategic planning of post-disaster infrastructure repairs}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Renos Karamanis} \hfill {\bf 2015 - Present} \\
+	\tab[0.2in] \textit{Infrastructure Resilience Modelling}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Nils Goldbeck} \hfill {\bf 2014 - Present} \\
+	\tab[0.2in] \textit{Development of Urban Infrastructure resilience models}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Nina Jirouskova} \hfill {\bf 2014 - Present} \\
+	\tab[0.2in] \textit{Quantitative analysis of container terminal recoveries from natural disasters}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Jung-Yong Seo} \hfill {\bf 2014 - Present} \\
+	\tab[0.2in] \textit{Integrated routing and scheduling of free-ranging Automated Guided Vehicles}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Pablo Achurra} \hfill {\bf 2013 - 2017} \\
+	\tab[0.2in] \textit{Resilience of the global liner shipping network}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Wenlong Sang} \hfill {\bf 2012 - 2016} \\
+	\tab[0.2in] \textit{Reliability of highway network architectures}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Thalis Zis} \hfill {\bf 2012 - 2015} \\
+	\tab[0.2in] \textit{Environmental impact of port operations}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Sarah Noye} \hfill {\bf 2011 - 2016} \\
+	\tab[0.2in] \textit{Improved building services commissioning using wireless sensor networks}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Normen Rochau} \hfill {\bf 2009 - 2013} \\
+	\tab[0.2in] \textit{Capacity constraints in public transportation}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Hamed Nikhalat} \hfill {\bf 2008 - 2012} \\
+	\tab[0.2in] \textit{An operational model for LNG spot and arbitrage sales}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Xin Liu} \hfill {\bf 2008 - 2012} \\
+	\tab[0.2in] \textit{Port choice, a frequency-based container assignment model}
+	\end{minipage}
+	\\
+
+\vspace{-0.15in}
+\pdfbookmark[section]{Postdoctoral Researchers}{postdocs}
+\section{\sc Postoctoral\\ Researchers}
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Mino Woo} \hfill {\bf 2017 - Present} \\
+	\tab[0.2in] \textit{Emissions-based vehicle pricing models}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Pablo Achurra-Gonzalez} \hfill {\bf 2017 - Present} \\
+	\tab[0.2in] \textit{Kinetic Energy Recovery Systems for Freight Vehicles}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Juan Marcos Garcia de la Cruz Lopez} \hfill {\bf 2016 - 2017} \\
+	\tab[0.2in] \textit{Kinetic Energy Recovery Systems for Freight Vehicles}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Ali Niknejad} \hfill {\bf 2015 - 2016} \\
+	\tab[0.2in] \textit{Maritime Shipbroking Platforms}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Simon Hu} \hfill {\bf 2015 - 2017} \\
+	\tab[0.2in] \textit{Vehicle Emissions Monitoring and Simulation}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Bani Anvari} \hfill {\bf 2013 - 2016} \\
+	\tab[0.2in] \textit{DfMA for Nuclear Construction}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Hao Ye} \hfill {\bf 2013 - 2014} \\
+	\tab[0.2in] \textit{Spatial Models for Urban Resilience}
+	\end{minipage}
+	\\
+
+\vspace{-0.10in}
+\pdfbookmark[section]{Research Administration}{sec10}
+\section{\sc Research\\ Administration}
+\vspace{0.05in}
+	\begin{minipage}{\textwidth}
+	{\bf Editorial Board Memberships} \\
+	\vspace{0.1in}
+	\begin{minipage}{\textwidth}
+	\setlength{\leftskip}{0.2in}
+	\textit{
+Journal of Shipping and Trade - Editorial Board Member, Transportmetrica B - Guest Editor(Special Issue on Dynamic Modelling and Optimisation of Transportation Systems in the Connected Era)	}
+	\end{minipage}
+	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Grant Proposal Reviews} \\
+	\vspace{0.1in}
+	\begin{minipage}{\textwidth}
+	\setlength{\leftskip}{0.2in}
+	\textit{
+Royal Society (United Kingdom), Japanese Society for the Promotion of Science (Japan), Archimedes \& Thales Funding Programmes (Greece), Research Financing Directorate (Romania), Freight Mobility Research Institute (United States)	}
+	\end{minipage}
+	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Journal Manuscripts Reviews} \\
+	\vspace{0.1in}
+	\begin{minipage}{\textwidth}
+	\setlength{\leftskip}{0.2in}
+	\textit{
+Accident Analysis and Prevention, Advanced Engineering Informatics, Advanced Transportation, Automation in Construction, Computers \& Operations Research, Engineering Applications of Artificial Intelligence, Flexible Services and Manufacturing, IEEE Transactions on Automation Science and Engineering, Industrial Engineering Theory Applications \& Practice, Maritime Policy and Management, Operations Research, Physica A, Public Transport, Science of the Total Environment, Simulation Modelling Practice and Theory, Transportation, Transportation Planning and Technology, Transportation Research Part A Policy and Practice, Transportation Research Part B Methodological, Transportation Research Part C Emerging Technologies, Transportation Research Part D Transport and Environment, Transportation Research Part E Logistics and Transportation, Transportmetrica A	}
+	\end{minipage}
+	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Conference Manuscript Reviews} \\
+	\vspace{0.1in}
+	\begin{minipage}{\textwidth}
+	\setlength{\leftskip}{0.2in}
+	\textit{
+International Network Operations Conference, Transport Research Board Annual Meeting, International IEEE Annual Conference on Intelligent Transportation Systems, Logistics and Maritime Systems	}
+	\end{minipage}
+	\end{minipage}
+	\\
+
+\vspace{-0.15in}
+\pdfbookmark[section]{PhD Examinations}{sec11}
+\section{\sc PhD Candidates\\ Examined}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Sophie Damy} \textit{(Imperial College London)} \hfill {\bf 2017}
+	\vspace{0.03in}
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Mirreile El Hajj} \textit{(Imperial College London)} \hfill {\bf 2017}
+	\vspace{0.03in}
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Rui Sha} \textit{(University College London)} \hfill {\bf 2017}
+	\vspace{0.03in}
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Kuang-Chang Pien} \textit{(Imperial College London)} \hfill {\bf 2015}
+	\vspace{0.03in}
+	\end{minipage}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Enrique Martin Alcade} \textit{(Universitat Politechnica de Catalonia)} \hfill {\bf 2014}
+	\vspace{0.03in}
+	\end{minipage}
+
+\pdfbookmark[section]{Teaching Contributions}{sec12}
+\section{\sc Teaching\\ Contributions}
+	{\bf MSc in Transport},\textit{Deputy Teaching Director} \hfill {\bf 2013-present}\\
+	{\bf CI370 Transport Systems},\textit{Module Coordinator} \hfill {\bf 2012-present}\\
+	{\bf CI423 Operations Research},\textit{Contributor} \hfill {\bf 2012-present}\\
+	{\bf T24 Ports and Maritime Transport},\textit{Module Coordinator} \hfill {\bf 2012-present}\\
+	{\bf T20 Freight Transport},\textit{Module Coordinator} \hfill {\bf 2012-2017}\\
+	{\bf Advanced Programming for Finance},\textit{Module Coordinator} \hfill {\bf 2009-2012}\\
+
+\vspace{-0.15in}
+\pdfbookmark[section]{Dissertation Supervision}{sec13}
+\section{\sc Dissertation \\ Supervision}
+\vspace{0.15in}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2018 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Liu Qingyun, Yak Sin Wen, Murat Imashev, Zhou Wan, Shan Jiawen 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Kisaanth Jeyarayan, Ioannis Tsipouras 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2017 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Mario Abou Farhat, Simone Charles Severin, Adrien Callet, Dimitrios Demeroukas, Ponn Chalermwongsawej, Guanjin Chen 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Naveeth Basheer, Tim Haughton, Khaled Abdulhamid, Anna Feledi 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{ }
+		\textit{UROP}: Nisansa Igalawithana 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2016 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Qiyu Sun, Carlos Estaban Piola Ruiz, Andreas Kaloterakis, Ivo Keranov, Linda Ivarsson, Wang Yue 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Ali Reza Baygi, Mohamed Gaafar, Kishan Patel, Giannis Slimpi 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{ }
+		\textit{UROP}: Anna Feledi 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2015 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Konstantinos Simotas 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Nicholas Wong, Javier Mnroig Vives, Jose Escribano, Jae Yung, Alexandros Abadjis 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{ }
+		\textit{UROP}: Muhamad Haji Kasri 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2014 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Cecilia Thordadottir, Matteo Novatti, Andrew Elwood, Gift Arnongant, Apostolos Ziakopoulos, Suqi Shi 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Elena Ochoa Garcia, Tamara Brooks 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2013 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Shuxuan Gong 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2012 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Ioanna Karelia 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Bernadette Lee 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2011 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Dimitris Papadopoulos, Qinq Zhao 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2010 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MEng}: Paul Corry 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2009 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Tzu-Yau Chuang, Zhiting Tao 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: James Pocknell 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2008 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MSc}: Melina Zarouka 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{}
+		\textit{MEng}: Richard Stagg 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2007 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{MEng}: Tarun Rao, Indragura Win 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+	\parskip=0in
+	\hangindent=0.45in
+	\hangafter=1
+	{\bf2006 }
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\textit{UROP}: Simon Fayer 
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\par
+
+\nocite{*}
+
+\pdfbookmark[section]{Publications}{sec14}
+\section{\sc {Publications}}
+\printbibliography[heading=none,type=article,resetnumbers=true]
+
+\pdfbookmark[section]{Book Chapters}{sec15}
+\section{\sc {Book Chapters}}
+\printbibliography[heading=none,type=book,resetnumbers=true]
+
+\pdfbookmark[section]{Conferences}{sec16}
+\section{\sc {Conferences}}
+\begin{etaremune}
+\renewcommand\labelenumi{C\theenumi. }
+	\item
+	{Goldbeck N, Angeloudis P and Ochieng WY}. "{A flow-based resilience assessment method for interdependent urban infrastructure networks}". \textit{International Conference on Infrastructure Resilience} (2018), Zurich, Switzerland
+	\item
+	{Goldbeck N, Angeloudis P and Ochieng WY}. "{A flow-based resilience assessment method for interdependent urban infrastructure networks}". \textit{International Conference on Infrastructure Resilience} (2018), Zurich, Switzerland
+	\item
+	{Goldbeck N, Angeloudis P and Ochieng WY}. "{Modelling the Dynamics of Asset Operability and Network Flows in Interdependent Infrastructure Systems after Disruptive Events}". \textit{International Conference on Dynamics of Disasters} (2017), Kalamata, Greece
+	\item
+	{Goldbeck N, Angeloudis P and Ochieng WY}. "{A dynamic network flow model for interdependent infrastructure and supply chain networks with uncertain asset operability}". \textit{International Conference on Computational Logistics} (2017), Southampton, United Kingdom
+	\item
+	{Hsu PY, Aurisicchio M and Angeloudis P}. "{Supply Chain Design for Modular Construction Projects}". \textit{LC3} (2017), Heraklion, Greece
+	\item
+	{Hsu PY, Aurisicchio M and Angeloudis P}. "{Establishing outsourcing and supply chain plans for prefabricated construction projects under uncertain productivity}". \textit{ICCL} (2017), Southampton, United Kingdom
+	\item
+	{Hsu PY, Aurisicchio M and Angeloudis P}. "{Investigating Schedule Deviation in Construction Projects through Root Cause Analysis}". \textit{ProjMan} (2017), Barcelona, Spain
+	\item
+	{Escribano J, Angeloudis P and Ochieng W}. "{Rapid Urban Evacuation across Constrained Transport Networks}". \textit{TRB} (2017), Washington, United States
+	\item
+	{Angeloudis P, Hu S, Achurra-Gonzalez P}. "{Intermodal container transport vulnerability}". \textit{LOGMS} (2017), Bergen, Norway
+	\item
+	{Escribano J, Angeloudis P and Ochieng WY}. "{Integrated Trajectory Optimisation and Location‐Routing Method for Rapid Medical Deliveries using Unmanned Aerial Vehicles (UAVs)}". \textit{Dynamics of Disasters} (2017), Kalamata, Greece
+	\item
+	{Goldbeck N, Ochieng W and Angeloudis P}. "{Joint Vulnerability Analysis of Urban Rail Transit and Utility Networks}". \textit{TRB} (2016), Washington, United States
+	\item
+	{Anvari B, Ochieng W, Bell MGH and Angeloudis P}. "{Calibration and Validation of a Shared Space Model, A Case Study}". \textit{TRB} (2016), Washington, United States
+	\item
+	{Achurra-Gonzalez P and Angeloudis P}. "{A quantitative framework for the assessment of network vulnerability in liner shipping networks}". \textit{TRB} (2016), Washington, United States
+	\item
+	{Zavitsas K, Hu S and Angeloudis P}. "{Assessing Autonomous Vehicles Impact On Urban Traffic Emissions and Intersection Performance}". \textit{TRB} (2016), Washington, United States
+	\item
+	{Angeloudis P}. "{Resilience of Liner Shipping Networks}". \textit{GPRA} (2016), Hamburg, Germany
+	\item
+	{Zis T, Angeloudis P and Bell MGH}. "{The environmental balance of vessel emission strategies}". \textit{TRB} (2016), Washington, United States
+	\item
+	{Niknejad A, Angeloudis A, Achurra-Gonzalez  P and Tsigkakos V}. "{Analysing World Events Using the GDELT dataset and Google BigQuery}". \textit{UK Research Software Engineering Conference} (2016), Manchester, United Kingdom
+	\item
+	{Goldbeck N and Angeloudis P}. "{Analysing the resilience of metro systems under consideration of interdependencies}". \textit{WCTR} (2016), Shanghai, China
+	\item
+	{Achurra-Gonzalez  P, Angeloudis A, Niknejad A, Graham D}. "{Attacker-defender modelling of transport vulnerability in maritime logistics corridors}". \textit{2nd International Workshop on Maritime Flows and Networks} (2016), Paris, France
+	\item
+	{Angeloudis P}. "{Maritime Networks Flows and Games}". \textit{2nd International Workshop on Maritime Flows and Networks} (2016), Paris, France
+	\item
+	{Angeloudis P}. "{Urban resilience modelling using network flows}". \textit{TRB} (2015), Washington, United States
+	\item
+	{Angeloudis P, Greco L and Bell MGH}. "{Strategic Maritime Container Transport Design in Oligopolistic Markets}". \textit{ISTTT21} (2015), Kobe, Japan
+	\item
+	{Zis T, North R, Angeloudis P, Ochieng WYO, Bell MGH}. "{The environmental balance of vessel emission strategies}". \textit{TRB} (2015), Washington, United States
+	\item
+	{Achurra-Gonzalez P and Angeloudis P}. "{Regional conflicts and impact of liner shipping}". \textit{GPRA} (2015), PolyU, Hong Kong
+	\item
+	{Pachakis D and Angeloudis P}. "{Equipment Sizing using Petri Nets}". \textit{GPRA} (2015), PolyU, Hong Kong
+	\item
+	{Novati M, Achurra-Gonzalez P and Angeloudis P}. "{Modelling the effects of port disruptions}". \textit{TRB} (2015), Washington, United States
+	\item
+	{Goldbeck N, Ochieng W and Angeloudis P}. "{Analysis of cascading failures across interdependent dynamic networks}". \textit{EURO} (2015), Glasgow, United Kingdom
+	\item
+	{Anvari B, Angeloudis P and Ochieng WYO}. "{Long-range Collision Avoidance for Shared Space Simulation based on Social Forces}". \textit{PED} (2014), Delft, Netherlands
+	\item
+	{Anvari B, Angeloudis P and Ochieng WY}. "{Analysis of Prefabricated Urban Housing Constructions on Freight Transport Systems}". \textit{INFORMS} (2014), San Diego, United States
+	\item
+	{Zis T, North R, Angeloudis P, Ochieng WYO and MGH Bell}. "{The effects of speed reduction policies near ports}". \textit{TRB} (2014), Washington, United States
+	\item
+	{Karamanis R, Angeloudis P and Stettler M}. "{A Fleet Size Algorithm for Autonomous Vehicle Fleets}". \textit{TRB} (2017), Washington, United States
+	\item
+	{Angeloudis P and Greco L}. "{Strategic network design in an oligopolistic market for maritime container transport}". \textit{EURO} (2013), Rome, Italy
+	\item
+	{Zis T, North R, Angeloudis P and Bell MGH}. "{A systematic evaluation of alternative options for the reduction of vessel emissions in ports}". \textit{TRB} (2013), Washington, United States
+	\item
+	{Angeloudis P, Jun H and Bell MGH}. "{A strategic repositioning algorithm for bicycle-sharing schemes}". \textit{TRB} (2012), Washington, United States
+	\item
+	{Bell MGH and Angeloudis P}. "{Repositioning algorithms for the global containership assignment network}". \textit{IFORS} (2011), Melbourne, Australia
+	\item
+	{Angeloudis P and Bell MGH}. "{A frequency-based maritime container assignment model for global liner services}". \textit{TRB} (2011), Washington, United States
+	\item
+	{Klerides E and Angeloudis P}. "{Stochastic and deterministic assignment under uncertainty for automated container terminals}". \textit{IFORS} (2011), Melbourne, Australia
+	\item
+	{Angeloudis P and Bell MGH}. "{Simulation and optimisation for the next generation of automated container terminals}". \textit{FACT} (2011), London, United Kingdom
+	\item
+	{Angeloudis P and Bell MGH}. "{Repositioning algorithms for bike sharing schemes}". \textit{UTSG} (2011), Milton Keynes, United Kingdom
+	\item
+	{Angeloudis P and Bell MGH}. "{A frequency-based maritime container assignment model for global liner services}". \textit{TRB} (2011), Washington, United States
+	\item
+	{Bell MGH and Angeloudis P}. "{Future for the Automation of Container Terminals}". \textit{LOGMS} (2010), Busan, South Korea
+	\item
+	{Angeloudis P, Bell MGH, Klerides E and Hadjiconstantinou E}. "{Stack Operation Uncertainty in Automated Container Terminals - Effects, Challenges and Control Techniques}". \textit{IAME} (2010), Lisbon, Portugal
+	\item
+	{Klerides E, Hadjiconstantinou E, Angeloudis P and Bell MGH}. "{Modelling and solution approaches to the multi-load AGV dispatching problem in seaport container Terminals}". \textit{IAME} (2010), Lisbon, Portugal
+	\item
+	{Angeloudis P and Bell MGH}. "{A fresh look at container terminal simulation and its application in academic research}". \textit{IAME} (2009), Copenhagen, Denmark
+	\item
+	{Bell MGH and Angeloudis P}. "{The Future of Automation}". \textit{5th PorTech Conference} (2009), Shanghai, China
+	\item
+	{Angeloudis P and Bell MGH}. "{Assignment of Multi-load AGVs under Uncertainty}". \textit{INFORMS} (2009), San Diego, United States
+	\item
+	{Angeloudis P and Bell MGH}. "{Uncertainty in container terminal operations}". \textit{IFORS} (2008), Johannesburg, South Africa
+	\item
+	{Ahuja S, Angeloudis P and Bell MGH}. "{Simulation and Evaluation of Intelligent Check in Facilities for Ferry Port Terminals}". \textit{European Transport Conference} (2007), Leiden, Netherlands
+	\item
+	{Angeloudis P and Bell MGH}. "{Optimisation Techniques to Automated Container Terminals, Application of Robust Optimisation}". \textit{UTSG} (2007), Harrogate{}`, United Kingdom
+	\item
+	{Angeloudis P and Bell MGH}. "{Implementation of an Automated Guided Vehicle dispatching and scheduling framework using robust optimisation}". \textit{INFORMS} (2007), Seattle, United States
+	\item
+	{Angeloudis P, Bichou K, Bell MGH and Fisk D}. "{Security and Reliability of the Liner Container-Shipping Network}". \textit{IAME} (2006), Melbourne, Australia
+\end{etaremune}
+
+\pdfbookmark[section]{Invited Talks}{invitedtalks}
+\section{\sc {Invited\\ Talks}}
+\begin{etaremune}
+\renewcommand\labelenumi{T\theenumi. }
+	\item
+	Jacobs (2017).\textit{"{Autonomous Vehicles and Connected Transport Technologies}"} London, United Kingdom
+	\item
+	Department for Transport (2017).\textit{"{Impact of World Events to Maritime Transport}"} London, United Kingdom
+	\item
+	Future Cities Catapult (2017).\textit{"{Innovation in Urban Infrastructure and Operations}"} London, United Kingdom
+	\item
+	Tongji University (2017).\textit{"{Ridesharing System Design}"} Shanghai, China
+	\item
+	National Development and Reform Commission (2017).\textit{"{Network Analysis of the Wuhan Logistics Cluster}"} Beijing, China
+	\item
+	National Planning Department (2016).\textit{"{Freight Network Modelling for the Colombia National Logistics Masterplan}"} Bogota, Colombia
+	\item
+	CNRS (2016).\textit{"{Maritime Networks Flows and Games}"} Paris, France
+	\item
+	University of Sydney (2016).\textit{"{Flow assignment for empty and full containers}"} Sydney, Australia
+	\item
+	University of Manchester (2016).\textit{"{Transport \& Urban Complexity}"} Manchester, United Kingdom
+	\item
+	Department for Transport (2016).\textit{"{Port Resilience and Shipping Network Models}"} London, United Kingdom
+	\item
+	Dean's Forum (2015).\textit{"{Resilience modelling using network flows}"} University of Tokyo, Japan
+	\item
+	ARUP (2014).\textit{"{Network Modelling for Urban Infrastructure}"} London, United Kingdom
+	\item
+	PD Ports (2014).\textit{"{Port Operations Modelling}"} Middlesbrough, United Kingdom
+	\item
+	Laing O' Rourke (2014).\textit{"{Dynamic Supply Chain Network Design}"} London, United Kingdom
+	\item
+	Kyoto University (2013).\textit{"{Resilience of Metro Networks}"} Kyoto, Japan
+	\item
+	Tokyo Institute of Technology (2013).\textit{"{A strategic redistribution algorithm for bicycle sharing schemes}"} Tokyo, Japan
+	\item
+	Tohoku University (2013).\textit{"{Strategic Infrastructure Resilience Modelling}"} Sendai, Japan
+	\item
+	MINES ParisTech (2013).\textit{"{Transport Infrastructure and Climate Change}"} Paris, France
+	\item
+	Dean's Forum (2012).\textit{"{Resilience of Urban Infrastructure}"} University of Tokyo, Japan
+	\item
+	EC eFreight Consortium (2010).\textit{"{Container Terminal Optimization and Simulation}"} Athens, Greece
+	\item
+	Lloyd's Maritime Academy (2008).\textit{"{State of Container Terminal Automation}"} London, United Kingdom
+\end{etaremune}
+
+\pdfbookmark[section]{Media Coverage}{media_coverage}
+\section{\sc {Media \\ Coverage}}
+	\begin{minipage}{\textwidth}
+	{\bf Associated Press} (September 2018).\textit{"{Mercedes partners with robot firm to create delivery robots}"}	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Kathimerini} (March 2013).\textit{"{Research Spotlight - Panagiotis Angeloudis}"}	\end{minipage}
+	\\
+
+\end{resume}
+\end{document}
+
+

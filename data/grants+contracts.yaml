@@ -1,9 +1,11 @@
 research_grants:
-  - name: A radical mode SHIFT enabled by autonomous pods
+  - name: A radical mode shift enabled by autonomous pods
     year: 2018
     source: InnovateUK
     value: 299800
   - name: Sustainable demand responsive transit schemes for developing countries
+    short: Sustainable DRT for developing countries
+    code: EP/P512655/1
     year: 2017
     source: EPSRC
     value: 7500
@@ -13,11 +15,13 @@ research_grants:
     value: 301200
     code: 103304
   - name: Optimisation of prefabricated construction (CASE)
+    short: Optimisation of prefabricated construction
     source: EPSRC, Rolls-Royce
     year: 2017
     code: 17000031
     value: 98000
   - name: Kinetic energy recovery for urban logistics applications (KERS-URBAN)
+    short: Kinetic energy recovery for urban logistics
     year: 2016
     source: InnovateUK
     value: 425000
@@ -26,17 +30,20 @@ research_grants:
     year: 2016
     source: HEFCE
     value: 18000
-  - name: OVARE - Optimised Vehicle Autonomy for Ride and Emissions
+  - name: OVARE - Optimised Vehicle Autonomy for ride and emissions
+    short: Optimised Vehicle Autonomy for ride and emissions
     year: 2015   
     source: InnovateUK
     value: 160000
     code: 132275
   - name: Strategic Network - Cities as Complex Adaptive Systems
+    short: Cities as Complex Adaptive Systems
     year: 2015
     source: ESRC
     value: 10160
     code:  ES/N009436/1 
   - name: Pathways to Impact – Shipbroking Optimization Platforms
+    short: Shipbroking Optimization Platforms
     year: 2015
     source: EPSRC
     value: 74888
@@ -47,6 +54,7 @@ research_grants:
     source: InnovateUK
     value: 190000
   - name: Postdoctoral Research Fellowship on Infrastructure Resilience
+    short: Infrastructure Resilience Fellowship
     year: 2013
     source: JSPS
     value: 10000
@@ -61,6 +69,7 @@ research_grants:
     code: IEE10154
     value: 107957
   - name: Robust and Stochastic Optimisation Methods for AGVs 
+    short: Robust and Stochastic Optimisation for AGVs
     year: 2008
     source: EPSRC
     code: EP/F044895
@@ -68,16 +77,19 @@ research_grants:
 
 research_contracts:
   - name: Optimisation of Prefabrication Strategies for Nuclear Construction
+    short: Optimisation nuclear construction strategies 
     year: 2017
     source: Bouygues Construction, France
     value: 68000
-  - name: Understanding the passenger road network through data 
+  - name: Understanding the passenger transport road network through data 
+    short: Understanding the passenger transport through data 
     year: 2017
     source: Government Office of Science, United Kingdom
     value: 10000
   - name: Development of the Colombian National Logistics Masterplan
+    short: Colombian National Logistics Masterplan
     year: 2016
-    source: Ivarsson & Asociados, Colombia
+    source: Ivarsson y Asociados, Colombia
     value: 15000
   - name: Wuhan Yangtze River Maritime Cluster Masterplan
     source: National Development and Reform Commission, China
@@ -88,6 +100,7 @@ research_contracts:
     value: 36000
     year: 2013
   - name: A universal infrastructure resilience assessment framework
+    short: Universal infrastructure resilience models
     source: ARUP, United Kingdom
     value: 25000
     year: 2012
@@ -96,14 +109,16 @@ research_contracts:
     value: 15000
     year: 2011
   - name: Design and Detailed Simulation Analysis of automated check-in facilities
-    source: Department for Transport, United Kingdom
+    short: Design and simulation of automated check-ins
+    source: P&O Ferries, United Kingdom
     value: 15000
     year: 2006
   - name: Scoping study for the improved FORGE model
-    source: P&O Ferries, United Kingdom
+    source: Department for Transport, United Kingdom
     value: 2000
     year: 2006
   - name: Throughput bottleneck analysis in container terminals
+    name: Throughput bottlenecks in container terminals
     source: P&O Ports, United Kingdom
     value: 2800
     year: 2005

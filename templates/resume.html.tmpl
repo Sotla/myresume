@@ -1,0 +1,197 @@
+## Change delimiters for Cheetah
+#compiler-settings
+cheetahVarStartToken = ;
+directiveStartToken = !
+#end compiler-settings
+
+###################
+!for ;entry in ;postdocs
+	!if ;entry.to != "Present" 
+		!continue
+	!end if
+	<b>
+	!if ;entry.get("url", None) != None
+		<a href=";entry.url" title=";entry.name">;entry.name</a>
+	!else
+		;entry.name
+	!end if
+	</b>
+	(Postdoctoral Researcher)
+	########&nbsp;&nbsp; (;entry.from - ;entry.to) 	
+	<br />
+	<em>;entry.project</em><br />
+!end for
+
+	<br />
+
+!for ;entry in ;phd_students
+	!if ;entry.to != "Present" 
+		!continue
+	!end if
+	<b>
+	!if ;entry.get("url", None) != None
+		<a href=";entry.url" title=";entry.name">;entry.name</a>
+	!else
+		;entry.name
+	!end if
+	</b>
+	(PhD Student)
+	########&nbsp;&nbsp; (;entry.from - ;entry.to) 	
+	<br />
+	<em>;entry.title</em><br />
+
+!end for
+
+####Research Grants
+<h2>Research Grants</h2>
+
+<p>
+!set ;sumtext=0
+!for ;entry in ;research_grants
+	!set ;sumtext+= int(;entry.value)
+	<b>
+	!if ;entry.get("short", None) != None
+		;entry.short
+	!else
+		;entry.name
+	!end if
+	</b><br />
+	<em>;entry.year, ;entry.source - &pound;
+	!echo(	"{:,}".format(int(;entry.value)).rjust(7).replace(" ",""))
+	
+	</em><br />
+
+!end for
+
+</p>
+
+Total research grants: 
+!echo("{:,}".format(int(;sumtext)).rjust(7).replace(" ","\space"))
+
+###################
+<h2>Research Contracts</h2>
+
+!set ;sumtext=0
+!for ;entry in ;research_contracts
+	!set ;sumtext+= int(;entry.value)
+	<b>
+	!if ;entry.get("short", None) != None
+		;entry.short
+	!else
+		;entry.name
+	!end if
+	</b><br />
+	<em>;entry.year,
+	;entry.source
+	</em><br />
+
+!end for
+
+###################
+
+
+###################
+<h2>Alumni: Postdoctoral Researchers</h2>
+
+!for ;entry in ;postdocs
+	!if ;entry.to == "Present" 
+		!continue
+	!end if
+	<b>
+	!if ;entry.get("url", None) != None
+		<a href=";entry.url" title=";entry.name">;entry.name</a>
+	!else
+		;entry.name
+	!end if
+	</b>	
+	&nbsp;
+	(;entry.from - ;entry.to) <br /> 	
+	<em>Project: ;entry.project</em><br />
+	!if ;entry.get("now", None) != None
+		<em>Now: ;entry.now </em><br />
+	!end if
+
+!end for
+
+###################
+<h2>Alumni: Doctoral Researchers</h2>
+
+!for ;entry in ;phd_students
+	!if ;entry.to == "Present" 
+		!continue
+	!end if
+	<b>
+	!if ;entry.get("url", None) != None
+		<a href=";entry.url" title=";entry.name">;entry.name</a>
+	!else
+		;entry.name
+	!end if
+	</b>	
+	&nbsp;
+	(;entry.from - ;entry.to) <br /> 	
+	<em>Project: ;entry.title</em><br />
+	!if ;entry.get("now", None) != None
+		<em>Now: ;entry.now </em><br />
+	!end if
+
+!end for
+
+###################
+<h2>Alumni: MEng and MSc Students</h2>
+
+!set ;minfrom = 9999
+!set ;minto = 0
+!silent import copy
+!silent taughtlist = list(copy.deepcopy(;taughtstudents))
+######################
+!for ;entry in ;taughtlist
+	!if int(;entry.year) < int(;minfrom)
+		!set ;minfrom = ;entry.year
+	!end if
+	!if int(;entry.year) > int(;minto)
+		!set ;minto = ;entry.year
+	!end if
+!end for
+######################
+!set ;currentyear = ;minto
+!while int(;currentyear) >= ;int(;minfrom)
+	<b>;currentyear: </b> 
+	!set ;joine = 0
+	######################
+	!set ;temp = ""
+	!for ;entry in ;taughtlist 
+		!if (;entry.type=="MSc" and int(;entry.year) == int(;currentyear))
+			!set ;temp= ;temp + str(;entry.name) +", " 
+		!end if
+	!end for
+	!set ;temp = ;temp[:-2]
+	!if ;len(temp) > 0
+		<em>;temp</em>
+		!set ;joine = 1
+	!end if 
+	######################
+	!set ;temp = ""
+	!for ;entry in ;taughtlist 
+		!if (;entry.type=="MEng" and int(;entry.year) == int(;currentyear))
+			!set ;temp= ;temp + str(;entry.name) +", " 
+		!end if
+	!end for
+	!set ;temp = ;temp[:-2]
+	!if ;len(temp) > 0
+		<em> ;temp</em>
+		!set ;joine = 1
+	!end if
+	######################
+	!set ;temp = ""
+	!for ;entry in ;taughtlist 
+		!if (;entry.type=="UROP" and int(;entry.year) == int(;currentyear))
+			!set ;temp= ;temp + str(;entry.name) +", " 
+		!end if
+	!end for
+	!set ;temp = ;temp[:-2]
+	!if ;len(temp) > 0
+		<em>;temp</em>
+	!end if
+	######################
+	!set ;currentyear = int(;currentyear)-1
+!end while

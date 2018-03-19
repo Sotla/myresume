@@ -46,40 +46,37 @@ def escape_leaves(escape_func, contents):
         return escape_func(str(contents))
 
 def get_cmd_line_args():
-    parser = OptionParser(usage="%prog [options] <extension>",
+    parser = OptionParser(usage="%prog <runtype>",
         description="Fills in Cheetah templates from YAML source to " +
-                    "generate resume of the given <extension> format."+
+                    "generate resume of the given <runtype> format."+
                     "The default option is tex")
-
-    parser.add_option("-o", "--output_dir",
-        default='output',
-        help="Output directory of generated files. Defaults to output/")
-
-    parser.add_option("-t", "--template",
-        default='templates/resume.%s.tmpl',
-        help="Filename of the output format template. Defaults to templates/resume.<extension>.tmpl")
 
     options, extra_args = parser.parse_args()
     if len(extra_args) < 1:
         parser.print_help()
         extra_args='tex'
+    else:
+        extra_args=extra_args[0]
         
-
     return options, extra_args
 
-if __name__ == '__main__':
-    options, extension = get_cmd_line_args()
+def load_db():
     contents = dict()
-
     for fname in glob.glob('data/*.yaml'):
             contents.update(yaml.load(open(fname, 'r').read()))
+    return contents
 
+def latex_build():
+    copyfile("data/publications.bib","%s/publications.bib" % output_dir)
+    copyfile("templates/res.cls","%s/res.cls" % output_dir)
+    os.chdir(output_dir)
+    os.system("pdflatex resume.tex")
+    os.system("bibtex resume")
+    os.system("pdflatex resume.tex")
+    os.system("pdflatex resume.tex")
+    copyfile("resume.pdf","CV-Angeloudis.pdf")
 
-    escaped_contents = escape_leaves(escape_tex, contents)
-    template = Template(file=options.template % extension, searchList=[escaped_contents])
-
-    output_dir = options.output_dir
-
+def prep_dirs():
     if os.path.exists(output_dir):
         shutil.rmtree(output_dir)
 
@@ -87,20 +84,20 @@ if __name__ == '__main__':
         os.makedirs(output_dir)
 
 
-    open('%s/resume.%s' % (output_dir, extension), 'w').write(str(template))
-    copyfile("data/publications.bib","output/publications.bib")
-    copyfile("templates/res.cls","output/res.cls")
-    
-    os.chdir("output")
-    os.system("pdflatex resume.tex")
-    os.system("bibtex resume")
-    os.system("pdflatex resume.tex")
-    os.system("pdflatex resume.tex")
+if __name__ == '__main__':
+    options, runtype = get_cmd_line_args()
+    db_contents = load_db()
 
-    copyfile("resume.pdf","CV-Angeloudis.pdf")
+    templatefile='templates/resume.%s.tmpl' % str(runtype)
+    output_dir = "output_%s" % runtype
 
-    
+    if runtype == "tex":
+        db_contents = escape_leaves(escape_tex, db_contents)
+    template = Template(file=templatefile, searchList=[db_contents])
 
+    prep_dirs()
 
-    
+    open('%s/resume.%s' % (output_dir, runtype), 'w').write(str(template))
 
+    if runtype == "tex":
+        latex_build()

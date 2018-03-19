@@ -201,17 +201,21 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!set ;sumtext+= int(;entry.value)
 	\begin{minipage}{\textwidth}
 	{\bf ;entry.name} \hfill {\bf ;entry.year} \\
-	\tab[0.2in] \textsterling{
-	!echo("{:,}".format(int(;entry.value)).rjust(7).replace(" ","\space"))
-	}
-	\quad  \textit{;entry.source}
+	\tab[0.2in] 
+	##\textsterling{
+	##!echo("{:,}".format(int(;entry.value)).rjust(7).replace(" ","\space"))
+	##}
+	##\quad  
+	\textit{;entry.source}
 	\end{minipage}\\
 !end for
 
-\vspace{-0.25in}
-\textit{Total research contracts: \textsterling{
-!echo("{:,}".format(int(;sumtext)).rjust(7).replace(" ","\space"))
-}}
+
+## we don't want sums for contracts
+##\vspace{-0.25in}
+##\textit{Total research contracts: \textsterling{
+##!echo("{:,}".format(int(;sumtext)).rjust(7).replace(" "#,"\space"))
+##}}
 
 \pdfbookmark[section]{PhD Thesis Supervision}{sec8}
 \section{\sc PhD Thesis\\ Supervision}
