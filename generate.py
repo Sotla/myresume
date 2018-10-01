@@ -74,7 +74,7 @@ def latex_build():
     os.system("bibtex resume")
     os.system("pdflatex resume.tex")
     os.system("pdflatex resume.tex")
-    copyfile("resume.pdf","CV-Angeloudis.pdf")
+    copyfile("resume.pdf","Angeloudis-CV.pdf")
 
 def prep_dirs():
     if os.path.exists(output_dir):

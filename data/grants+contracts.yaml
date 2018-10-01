@@ -1,4 +1,8 @@
 research_grants:
+  - name: Validating autonomous vehicle safety using simulation and adaptive test generation
+    year: 2018
+    source: InnovateUK
+    value: 769417
   - name: A radical mode shift enabled by autonomous pods
     year: 2018
     source: InnovateUK

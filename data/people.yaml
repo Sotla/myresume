@@ -1,15 +1,19 @@
 phd_students:
+  - name: Qiming Ye
+    title: Influence of Shared Mobility Platforms on Urban Planning 
+    from: 2018
+    to: Present
+  - name: Roxanne Yaoyuan Zhang
+    url: https://www.imperial.ac.uk/people/yaoyuan.zhang13
+    title: Design of dynamic demand responsive transport systems
+    from: 2017
+    to: Present
   - name: Tim Haughton
     title: Optimisation of prefabricated construction
     url: https://www.imperial.ac.uk/people/timothy.haughton13
     from: 2017
     to: Present
-  - name: Kimberly Jayum
-    title: Risk of Autonomous Vehicle Operations
-    url: https://www.imperial.ac.uk/people/k.jayum15
-    from: 2016
-    to: Present
-  - name: Leo Leo 
+  - name: Leo Hsu 
     title: Flexible design of supply chains in the construction industry
     url: http://www.imperial.ac.uk/people/p.hsu15
     from: 2015
@@ -34,11 +38,11 @@ phd_students:
     url: http://www.imperial.ac.uk/sustainable-civil-engineering/ongoingresearch/cohort-1-students/ninajirouskova/
     from: 2014
     to: Present
-  - name: Jung-Yong Seo 
+  - name: Dr Jung-Yong Seo 
     url: https://www.imperial.ac.uk/people/jung-yong.seo12
     title: Integrated routing and scheduling of free-ranging Automated Guided Vehicles
     from: 2014
-    to: Present
+    to: 2017
   - name: Dr Pablo Achurra 
     title: Resilience of the global liner shipping network
     now: Researcher at Imperial College
@@ -77,14 +81,23 @@ phd_students:
     to: 2012
 
 postdocs:
-  - name: Dr Mino Woo
-    project: Emissions-based vehicle pricing models
-    from: 2017
+  - name: Dr Eleftherios Anastasiadis
+    project: Modelling of Shared Autonomous Vehicle Platforms
+    url:   https://www.imperial.ac.uk/people/e.anastasiadis
+    from: 2018
     to: Present
   - name: Dr Pablo Achurra-Gonzalez
     project: Kinetic Energy Recovery Systems for Freight Vehicles
     url: http://www.imperial.ac.uk/people/p.achurra-gonzalez
     from: 2017
+    to: Present
+  - name: Dr Mino Woo
+    project: Emissions-based vehicle pricing models
+    from: 2017
+    to: Present
+  - name: Dr Daniel Ainalis
+    project: Kinetic Energy Recovery Systems for Freight Vehicles
+    from: 2018
     to: Present
   - name: Dr Juan Marcos Garcia de la Cruz Lopez
     project: Kinetic Energy Recovery Systems for Freight Vehicles
@@ -115,6 +128,21 @@ postdocs:
     to: 2014
 
 taughtstudents:
+  - name: Qingyun Liu
+    type: MSc
+    year: 2018
+  - name: Imashev Murat
+    type: MSc
+    year: 2018
+  - name: Jiawen Shan
+    type: MSc
+    year: 2018
+  - name: Yak Sin Wen
+    type: MSc
+    year: 2018
+  - name: Zhou Wan
+    type: MSc
+    year: 2018
   - name: Kisaanth Jeyarayan
     type: MEng
     year: 2018
@@ -283,10 +311,6 @@ taughtstudents:
     type: MEng
     year: 2007
     title: Vehicle routing in AGV systems
-  - name: Simon Fayer
-    type: UROP
-    year: 2006
-    title: Development of a 3D container flow model
   - name: Liu Qingyun
     year: 2018
     type: MSc
@@ -307,6 +331,21 @@ taughtstudents:
     year: 2018
     type: MSc
     title: Autonomous Delivery for Short Distance
+  - name: Simon Fayer
+    type: UROP
+    year: 2006
+  - name: Iulia Manole
+    year: 2018
+    type: UROP    
+    title: Discrete Choice Modelling for TNC customers
+  - name: Olivia Revans
+    type: UROP
+    year: 2018
+    title: Analysis of large scale urban networks
+  - name: Carl Khalife
+    type: UROP
+    year: 2018
+    title: Trajectory Optimisation for Urban Aerial Transportation Systems 
 
 
 

@@ -11,7 +11,7 @@ directiveStartToken = !
 \oddsidemargin -.6in
 \evensidemargin -.6in
 \textwidth=6.5in
-\textheight=10in
+\textheight=9.5in
 \topmargin -0.4in
 \footskip 0.2in
 \itemsep=0in
@@ -62,13 +62,13 @@ directiveStartToken = !
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
 
-\AtDataInput[book]{%
+\AtDataInput[incollection]{%
  \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
   \listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
   \csnumgdef{bookentrycount:\therefsection}{%
       \csuse{bookentrycount:\therefsection}+1}}}
 
-\DeclareFieldFormat[book]{labelnumber}{\mkbibbookdesc{#1}}
+\DeclareFieldFormat[incollection]{labelnumber}{\mkbibbookdesc{#1}}
 
 \newrobustcmd*{\mkbibbookdesc}[1]{%
    B\number\numexpr\csuse{bookentrycount:\therefsection}+1-#1\relax}
@@ -353,7 +353,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \pdfbookmark[section]{Book Chapters}{sec15}
 \section{\sc {Book Chapters}}
-\printbibliography[heading=none,type=book,resetnumbers=true]
+\printbibliography[heading=none,type=incollection,resetnumbers=true]
 
 \pdfbookmark[section]{Conferences}{sec16}
 \section{\sc {Conferences}}

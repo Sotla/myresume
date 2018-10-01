@@ -6,7 +6,7 @@
 \oddsidemargin -.6in
 \evensidemargin -.6in
 \textwidth=6.5in
-\textheight=10in
+\textheight=9.5in
 \topmargin -0.4in
 \footskip 0.2in
 \itemsep=0in
@@ -57,13 +57,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
 
-\AtDataInput[book]{%
+\AtDataInput[incollection]{%
  \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
   \listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
   \csnumgdef{bookentrycount:\therefsection}{%
       \csuse{bookentrycount:\therefsection}+1}}}
 
-\DeclareFieldFormat[book]{labelnumber}{\mkbibbookdesc{#1}}
+\DeclareFieldFormat[incollection]{labelnumber}{\mkbibbookdesc{#1}}
 
 \newrobustcmd*{\mkbibbookdesc}[1]{%
    B\number\numexpr\csuse{bookentrycount:\therefsection}+1-#1\relax}
@@ -125,6 +125,8 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \section{\sc Professional\\ Positions}
 	{\bf Imperial College Consultants Ltd}, London, United Kingdom \\
 		\tab[0.2in] \textit{Research Consultant} \hfill {\bf Sep 2006 - present}\\
+	{\bf CharterDirect Shipping Ltd.}, London, United Kingdom \\
+		\tab[0.2in] \textit{Chief Scientific Advisor} \hfill {\bf May 2018 - present}\\
 	{\bf United Nations}, Geneva, Switzerland \\
 		\tab[0.2in] \textit{Graduate Intern} \hfill {\bf May - Aug 2006}\\
 	{\bf P\&O Ports}, Southampton, United Kindom \\
@@ -148,6 +150,12 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \pdfbookmark[section]{Committees & Advisory}{ext_committees}
 \section{\sc Committees\\ \&  Advisory}
 \vspace{+0.1in}
+	\begin{minipage}{\textwidth}
+	{\bf UK Department for Transport (DfT)} \hfill {\bf 2018 - Present} \\
+	\tab[0.2in] \textit{Expert Panel, Maritime 2050}
+	\end{minipage}
+	\vspace{0.02in}
+	\\
 	\begin{minipage}{\textwidth}
 	{\bf LOGMS Scientific Advisory Committee} \hfill {\bf 2016 - Present} \\
 	\tab[0.2in] \textit{Elected Member}
@@ -190,6 +198,14 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \section{\sc Research\\ Grants}
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
+	{\bf Validating autonomous vehicle safety using simulation and adaptive test generation} \hfill {\bf 2018} \\
+	\tab[0.2in] \textsterling{
+769,417	}
+	\quad InnovateUK
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
 	{\bf A radical mode shift enabled by autonomous pods} \hfill {\bf 2018} \\
 	\tab[0.2in] \textsterling{
 299,800	}
@@ -202,6 +218,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\tab[0.2in] \textsterling{
 \space\space7,500	}
 	\quad EPSRC
+	\textit{(Grant code: EP/P512655/1)}
 	\end{minipage}
 	\\
 	\vspace{0.03in}
@@ -313,7 +330,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.25in}
 \textit{Total research grants: \textsterling{
-2,506,807}}
+3,276,224}}
 
 \pdfbookmark[section]{Research Contracts}{sec7}
 \section{\sc Research\\ Contracts}
@@ -385,19 +402,25 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \section{\sc PhD Thesis\\ Supervision}
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
+	{\bf Qiming Ye} \hfill {\bf 2018 - Present} \\
+	\tab[0.2in] \textit{Influence of Shared Mobility Platforms on Urban Planning}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Roxanne Yaoyuan Zhang} \hfill {\bf 2017 - Present} \\
+	\tab[0.2in] \textit{Design of dynamic demand responsive transport systems}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
 	{\bf Tim Haughton} \hfill {\bf 2017 - Present} \\
 	\tab[0.2in] \textit{Optimisation of prefabricated construction}
 	\end{minipage}
 	\\
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
-	{\bf Kimberly Jayum} \hfill {\bf 2016 - Present} \\
-	\tab[0.2in] \textit{Risk of Autonomous Vehicle Operations}
-	\end{minipage}
-	\\
-	\vspace{0.03in}
-	\begin{minipage}{\textwidth}
-	{\bf Leo Leo} \hfill {\bf 2015 - Present} \\
+	{\bf Leo Hsu} \hfill {\bf 2015 - Present} \\
 	\tab[0.2in] \textit{Flexible design of supply chains in the construction industry}
 	\end{minipage}
 	\\
@@ -427,7 +450,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\\
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
-	{\bf Jung-Yong Seo} \hfill {\bf 2014 - Present} \\
+	{\bf Dr Jung-Yong Seo} \hfill {\bf 2014 - 2017} \\
 	\tab[0.2in] \textit{Integrated routing and scheduling of free-ranging Automated Guided Vehicles}
 	\end{minipage}
 	\\
@@ -479,13 +502,25 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \section{\sc Postoctoral\\ Researchers}
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
+	{\bf Dr Eleftherios Anastasiadis} \hfill {\bf 2018 - Present} \\
+	\tab[0.2in] \textit{Modelling of Shared Autonomous Vehicle Platforms}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\bf Dr Pablo Achurra-Gonzalez} \hfill {\bf 2017 - Present} \\
+	\tab[0.2in] \textit{Kinetic Energy Recovery Systems for Freight Vehicles}
+	\end{minipage}
+	\\
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
 	{\bf Dr Mino Woo} \hfill {\bf 2017 - Present} \\
 	\tab[0.2in] \textit{Emissions-based vehicle pricing models}
 	\end{minipage}
 	\\
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
-	{\bf Dr Pablo Achurra-Gonzalez} \hfill {\bf 2017 - Present} \\
+	{\bf Dr Daniel Ainalis} \hfill {\bf 2018 - Present} \\
 	\tab[0.2in] \textit{Kinetic Energy Recovery Systems for Freight Vehicles}
 	\end{minipage}
 	\\
@@ -530,7 +565,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\begin{minipage}{\textwidth}
 	\setlength{\leftskip}{0.2in}
 	\textit{
-Journal of Shipping and Trade - Editorial Board Member, Transportmetrica B - Guest Editor(Special Issue on Dynamic Modelling and Optimisation of Transportation Systems in the Connected Era)	}
+Journal of Shipping and Trade - Editorial Board Member, Transportmetrica B - Guest Editor (Dynamic Modelling and Optimisation of Transportation Systems in the Connected Era)	}
 	\end{minipage}
 	\end{minipage}
 	\\
@@ -540,7 +575,17 @@ Journal of Shipping and Trade - Editorial Board Member, Transportmetrica B - Gue
 	\begin{minipage}{\textwidth}
 	\setlength{\leftskip}{0.2in}
 	\textit{
-Royal Society (United Kingdom), Japanese Society for the Promotion of Science (Japan), Archimedes \& Thales Funding Programmes (Greece), Research Financing Directorate (Romania), Freight Mobility Research Institute (United States)	}
+Engineering and Physical Sciences Research Council (United Kingdom), Royal Society (United Kingdom), National Science Center (Poland), Japanese Society for the Promotion of Science (Japan), Archimedes \& Thales Funding Programmes (Greece), Research Financing Directorate (Romania), Freight Mobility Research Institute (United States)	}
+	\end{minipage}
+	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Book Proposal Reviews} \\
+	\vspace{0.1in}
+	\begin{minipage}{\textwidth}
+	\setlength{\leftskip}{0.2in}
+	\textit{
+ICE Publishing	}
 	\end{minipage}
 	\end{minipage}
 	\\
@@ -555,12 +600,12 @@ Accident Analysis and Prevention, Advanced Engineering Informatics, Advanced Tra
 	\end{minipage}
 	\\
 	\begin{minipage}{\textwidth}
-	{\bf Conference Manuscript Reviews} \\
+	{\bf Conference Programme Committee Memberships} \\
 	\vspace{0.1in}
 	\begin{minipage}{\textwidth}
 	\setlength{\leftskip}{0.2in}
 	\textit{
-International Network Operations Conference, Transport Research Board Annual Meeting, International IEEE Annual Conference on Intelligent Transportation Systems, Logistics and Maritime Systems	}
+International Network Operations Conference, International Conference on Computational Logistics, Transport Research Board Annual Meeting, International Association of Maritime Economists, International IEEE Annual Conference on Intelligent Transportation Systems, Logistics and Maritime Systems	}
 	\end{minipage}
 	\end{minipage}
 	\\
@@ -609,11 +654,13 @@ International Network Operations Conference, Transport Research Board Annual Mee
 	\hangafter=1
 	{\bf2018 }
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\textit{MSc}: Liu Qingyun, Yak Sin Wen, Murat Imashev, Zhou Wan, Shan Jiawen 
+		\textit{MSc}: Qingyun Liu, Imashev Murat, Jiawen Shan, Yak Sin Wen, Zhou Wan, Liu Qingyun, Yak Sin Wen, Murat Imashev, Zhou Wan, Shan Jiawen 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			{}
 		\textit{MEng}: Kisaanth Jeyarayan, Ioannis Tsipouras 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			{ }
+		\textit{UROP}: Iulia Manole, Olivia Revans, Carl Khalife 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\par
 	\parskip=0in
@@ -765,7 +812,7 @@ International Network Operations Conference, Transport Research Board Annual Mee
 
 \pdfbookmark[section]{Book Chapters}{sec15}
 \section{\sc {Book Chapters}}
-\printbibliography[heading=none,type=book,resetnumbers=true]
+\printbibliography[heading=none,type=incollection,resetnumbers=true]
 
 \pdfbookmark[section]{Conferences}{sec16}
 \section{\sc {Conferences}}
@@ -926,7 +973,19 @@ International Network Operations Conference, Transport Research Board Annual Mee
 \pdfbookmark[section]{Media Coverage}{media_coverage}
 \section{\sc {Media \\ Coverage}}
 	\begin{minipage}{\textwidth}
-	{\bf Associated Press} (September 2018).\textit{"{Mercedes partners with robot firm to create delivery robots}"}	\end{minipage}
+	{\bf Seatrade Maritime} (April 2018).\textit{"{UK Government sets up think tank on future of maritime}"}	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Splash 247} (March 2018).\textit{"{UK government assembles top maritime advisory panel}"}	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Tanker Shipping and Trade} (March 2018).\textit{"{Head of Shell shipping \& maritime appointed to UK government maritime strategy ‘dream team’}"}	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Supply Chain - Greece} (March 2018).\textit{"{Υποδοχή της Προέδρου Gast από τους Συλλόγους Αποφοίτων του Imperial College London στην Ελλάδα}"}	\end{minipage}
+	\\
+	\begin{minipage}{\textwidth}
+	{\bf Associated Press} (September 2017).\textit{"{Mercedes partners with robot firm to create delivery robots}"}	\end{minipage}
 	\\
 	\begin{minipage}{\textwidth}
 	{\bf Kathimerini} (March 2013).\textit{"{Research Spotlight - Panagiotis Angeloudis}"}	\end{minipage}

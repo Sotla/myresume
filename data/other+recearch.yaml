@@ -2,14 +2,19 @@ research_contib:
   - area: Editorial Board Memberships
     items: 
       - Journal of Shipping and Trade - Editorial Board Member
-      - Transportmetrica B - Guest Editor(Special Issue on Dynamic Modelling and Optimisation of Transportation Systems in the Connected Era)
+      - Transportmetrica B - Guest Editor (Dynamic Modelling and Optimisation of Transportation Systems in the Connected Era)
   - area: Grant Proposal Reviews
     items:
+      - Engineering and Physical Sciences Research Council (United Kingdom)
       - Royal Society (United Kingdom)
+      - National Science Center (Poland)
       - Japanese Society for the Promotion of Science (Japan)
       - Archimedes & Thales Funding Programmes (Greece)
       - Research Financing Directorate (Romania)
       - Freight Mobility Research Institute (United States)
+  - area: Book Proposal Reviews
+    items: 
+      - ICE Publishing
   - area: Journal Manuscripts Reviews
     items:
        - Accident Analysis and Prevention
@@ -35,10 +40,12 @@ research_contib:
        - Transportation Research Part D Transport and Environment
        - Transportation Research Part E Logistics and Transportation
        - Transportmetrica A
-  - area: Conference Manuscript Reviews
+  - area: Conference Programme Committee Memberships
     items:
       - International Network Operations Conference
+      - International Conference on Computational Logistics
       - Transport Research Board Annual Meeting 
+      - International Association of Maritime Economists
       - International IEEE Annual Conference on Intelligent Transportation Systems
       - Logistics and Maritime Systems
 
@@ -82,7 +89,23 @@ teaching_contib:
 
 
 media_coverage:
-  - date: September 2018
+  - date: April 2018
+    org: Seatrade Maritime 
+    title:  UK Government sets up think tank on future of maritime 
+    link: http://www.seatrade-maritime.com/news/europe/uk-government-sets-up-think-tank-on-future-of-maritime.html
+  - date: March 2018
+    org: Splash 247
+    title: UK government assembles top maritime advisory panel
+    link: http://splash247.com/uk-government-assembles-top-maritime-advisory-panel/
+  - date: March 2018
+    org: Tanker Shipping and Trade
+    title: Head of Shell shipping & maritime appointed to UK government maritime strategy ‘dream team’
+    link: http://www.tankershipping.com/news/view,head-of-shell-shipping-maritime-appointed-to-uk-government-maritime-strategy-dream-team_51241.htm
+  - date: March 2018
+    org: Supply Chain - Greece
+    title: Υποδοχή της Προέδρου Gast από τους Συλλόγους Αποφοίτων του Imperial College London στην Ελλάδα 
+    link: http://www.supply-chain.gr/υποδοχή-της-προέδρου-gast-από-τους-συλλόγ/
+  - date: September 2017
     org: Associated Press
     title: Mercedes partners with robot firm to create delivery robots
     link: http://www.aparchive.com/metadata/-TT-UK-Delivery-Robot/18f1ff79ebb89afa28c7addd1e7e26be

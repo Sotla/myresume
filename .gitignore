@@ -4,3 +4,9 @@
 TODO.md
 *.sublime-project
 *.sublime-workspace
+output_tex/resume.run.xml
+output_tex/resume.log
+output_tex/resume.blg
+output_tex/resume.bbl
+output_tex/resume.aux
+output_tex/resume-blx.bib

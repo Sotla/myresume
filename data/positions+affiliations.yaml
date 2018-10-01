@@ -38,6 +38,12 @@ pro_posts:
     - position_name: Research Consultant
       position_from: Sep 2006
       position_to: present 
+  - org_name: CharterDirect Shipping Ltd.
+    org_location: London, United Kingdom
+    roles:
+    - position_name: Chief Scientific Advisor
+      position_from: May 2018
+      position_to: present 
   - org_name: United Nations
     org_location: Geneva, Switzerland
     roles:
@@ -60,9 +66,9 @@ pro_affiliations:
     title: Member
 
 ext_committees:
- # - organisation: UK Department for Transport (DfT)
- #   dates: 2018 - Present
- #   description: Expert Panel, Maritime 2050
+  - organisation: UK Department for Transport (DfT)
+    dates: 2018 - Present
+    description: Expert Panel, Maritime 2050
   - organisation: LOGMS Scientific Advisory Committee
     dates: 2016 - Present
     description: Elected Member  
