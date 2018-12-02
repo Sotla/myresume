@@ -1,11 +1,18 @@
 conferences:
-  - title: A flow-based resilience assessment method for interdependent urban infrastructure networks
+  - title: Analysing the effects of interdependency on the resilience of urban transport systems, A dynamic network flow approach
+    year: 2018
+    code: P18C
+    authors: Goldbeck N, Angeloudis P and Ochieng WY
+    conference: 7th International Symposium on Transport Network Reliability
+    location: Sydney
+    country: Australia   
+  - title: Probabilistic assessment of container shipping route disruption costs from natural disasters – An application to the KIX Australia-New Zealand Service Line
     year: 2018
     code: P18B
-    authors: Goldbeck N, Angeloudis P and Ochieng WY
-    conference: International Conference on Infrastructure Resilience
-    location: Zurich
-    country: Switzerland   
+    authors: Jirouskova N, Achurra-Gonzalez P, Goldbeck N and Angeloudis P
+    conference: 7th International Symposium on Transport Network Reliability
+    location: Sydney
+    country: Australia   
   - title: A flow-based resilience assessment method for interdependent urban infrastructure networks
     year: 2018
     code: P18A
@@ -20,13 +27,6 @@ conferences:
     conference: International Conference on Dynamics of Disasters 
     location: Kalamata
     country: Greece   
-  - title: A dynamic network flow model for interdependent infrastructure and supply chain networks with uncertain asset operability
-    year: 2017
-    code: P17H
-    authors: Goldbeck N, Angeloudis P and Ochieng WY
-    conference: International Conference on Computational Logistics 
-    location: Southampton
-    country: United Kingdom    
   - title: Supply Chain Design for Modular Construction Projects
     year: 2017
     authors: Hsu PY, Aurisicchio M and Angeloudis P
@@ -34,20 +34,6 @@ conferences:
     code: P17G    
     location: Heraklion
     country: Greece
-  - title: Establishing outsourcing and supply chain plans for prefabricated construction projects under uncertain productivity
-    year: 2017
-    authors: Hsu PY, Aurisicchio M and Angeloudis P
-    code: P17F    
-    conference: ICCL 
-    location: Southampton
-    country: United Kingdom
-  - title: Investigating Schedule Deviation in Construction Projects through Root Cause Analysis
-    year: 2017
-    authors: Hsu PY, Aurisicchio M and Angeloudis P
-    code: P17E   
-    conference: ProjMan 
-    location: Barcelona
-    country: Spain
   - title: Rapid Urban Evacuation across Constrained Transport Networks
     year: 2017
     code: P17D
@@ -69,34 +55,6 @@ conferences:
     conference: Dynamics of Disasters 
     location: Kalamata
     country: Greece   
-  - title: Joint Vulnerability Analysis of Urban Rail Transit and Utility Networks
-    year: 2016
-    code: P16A
-    authors: Goldbeck N, Ochieng W and Angeloudis P
-    conference: TRB 
-    location: Washington
-    country: United States
-  - title: Calibration and Validation of a Shared Space Model, A Case Study
-    year: 2016
-    code: P16B
-    authors: Anvari B, Ochieng W, Bell MGH and Angeloudis P 
-    conference: TRB 
-    location: Washington
-    country: United States
-  - title: A quantitative framework for the assessment of network vulnerability in liner shipping networks
-    year: 2016
-    code: P16C
-    authors: Achurra-Gonzalez P and Angeloudis P
-    conference: TRB 
-    location: Washington
-    country: United States
-  - title: Assessing Autonomous Vehicles Impact On Urban Traffic Emissions and Intersection Performance
-    year: 2016
-    code: P16D
-    authors: Zavitsas K, Hu S and Angeloudis P
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Resilience of Liner Shipping Networks
     year: 2016
     code: P16E
@@ -104,13 +62,6 @@ conferences:
     conference: GPRA
     location: Hamburg
     country: Germany
-  - title: The environmental balance of vessel emission strategies
-    year: 2016
-    code: P16F
-    authors: Zis T, Angeloudis P and Bell MGH 
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Analysing World Events Using the GDELT dataset and Google BigQuery
     year: 2016
     code: P16G
@@ -118,13 +69,7 @@ conferences:
     conference: UK Research Software Engineering Conference 
     location: Manchester
     country: United Kingdom
-  - title: Analysing the resilience of metro systems under consideration of interdependencies
-    year: 2016
-    code: P16H
-    authors: Goldbeck N and Angeloudis P
-    conference: WCTR 
-    location: Shanghai
-    country: China
+
   - title: Attacker-defender modelling of transport vulnerability in maritime logistics corridors
     year: 2016
     code: WIMAKS
@@ -138,27 +83,6 @@ conferences:
     conference: 2nd International Workshop on Maritime Flows and Networks
     location: Paris
     country: France    
-  - title: Urban resilience modelling using network flows
-    year: 2015
-    code: P15A
-    authors: Angeloudis P
-    conference: TRB 
-    location: Washington
-    country: United States
-  - title: Strategic Maritime Container Transport Design in Oligopolistic Markets
-    year: 2015
-    code: P15B
-    authors: Angeloudis P, Greco L and Bell MGH 
-    conference: ISTTT21 
-    location: Kobe
-    country: Japan
-  - title: The environmental balance of vessel emission strategies
-    year: 2015
-    code: P15C
-    authors: Zis T, North R, Angeloudis P, Ochieng WYO, Bell MGH
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Regional conflicts and impact of liner shipping
     year: 2015
     authors: Achurra-Gonzalez P and Angeloudis P
@@ -172,13 +96,6 @@ conferences:
     conference: GPRA 
     location: PolyU
     country: Hong Kong
-  - title: Modelling the effects of port disruptions
-    year: 2015
-    code: P15D
-    authors: Novati M, Achurra-Gonzalez P and Angeloudis P
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Analysis of cascading failures across interdependent dynamic networks
     year: 2015
     code: P15E
@@ -186,32 +103,12 @@ conferences:
     conference: EURO 
     location: Glasgow
     country: United Kingdom
-  - title: Long-range Collision Avoidance for Shared Space Simulation based on Social Forces
-    year: 2014
-    authors: Anvari B, Angeloudis P and Ochieng WYO
-    conference: PED 
-    location: Delft
-    country: Netherlands
   - title: Analysis of Prefabricated Urban Housing Constructions on Freight Transport Systems
     year: 2014
     code: P14A
     authors: Anvari B, Angeloudis P and Ochieng WY
     conference: INFORMS 
     location: San Diego
-    country: United States
-  - title: The effects of speed reduction policies near ports
-    year: 2014
-    code: P14B
-    authors: Zis T, North R, Angeloudis P, Ochieng WYO and MGH Bell 
-    conference: TRB 
-    location: Washington
-    country: United States
-  - title: A Fleet Size Algorithm for Autonomous Vehicle Fleets
-    year: 2017
-    code: P17A
-    authors: Karamanis R, Angeloudis P and Stettler M
-    conference: TRB 
-    location: Washington
     country: United States
   - title: Strategic network design in an oligopolistic market for maritime container transport
     year: 2013
@@ -220,20 +117,6 @@ conferences:
     conference: EURO
     location: Rome
     country: Italy
-  - title: A systematic evaluation of alternative options for the reduction of vessel emissions in ports
-    year: 2013
-    code: P13B
-    authors: Zis T, North R, Angeloudis P and Bell MGH
-    conference: TRB 
-    location: Washington
-    country: United States
-  - title: A strategic repositioning algorithm for bicycle-sharing schemes
-    year: 2012
-    code: P12A
-    authors: Angeloudis P, Jun H and Bell MGH 
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Repositioning algorithms for the global containership assignment network
     year: 2011
     code: P11A
@@ -241,13 +124,6 @@ conferences:
     conference: IFORS
     location: Melbourne
     country: Australia
-  - title: A frequency-based maritime container assignment model for global liner services
-    year: 2011
-    code: P11B
-    authors: Angeloudis P and Bell MGH
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Stochastic and deterministic assignment under uncertainty for automated container terminals
     year: 2011
     code: P11C
@@ -262,20 +138,6 @@ conferences:
     conference: FACT 
     location: London
     country: United Kingdom
-  - title: Repositioning algorithms for bike sharing schemes
-    year: 2011
-    code: P11E
-    authors: Angeloudis P and Bell MGH
-    conference: UTSG 
-    location: Milton Keynes
-    country: United Kingdom
-  - title: A frequency-based maritime container assignment model for global liner services
-    year: 2011
-    code: P11F
-    authors: Angeloudis P and Bell MGH
-    conference: TRB 
-    location: Washington
-    country: United States
   - title: Future for the Automation of Container Terminals
     year: 2010
     code: P10A
@@ -283,27 +145,7 @@ conferences:
     conference: LOGMS
     location: Busan
     country: South Korea
-  - title: Stack Operation Uncertainty in Automated Container Terminals - Effects, Challenges and Control Techniques
-    year: 2010
-    code: P10B
-    authors: Angeloudis P, Bell MGH, Klerides E and Hadjiconstantinou E
-    conference: IAME
-    location: Lisbon
-    country: Portugal
-  - title: Modelling and solution approaches to the multi-load AGV dispatching problem in seaport container Terminals
-    year: 2010
-    code: P10C
-    authors: Klerides E, Hadjiconstantinou E, Angeloudis P and Bell MGH 
-    conference: IAME
-    location: Lisbon
-    country: Portugal
-  - title: A fresh look at container terminal simulation and its application in academic research
-    year: 2009
-    code: P09A
-    authors: Angeloudis P and Bell MGH
-    conference: IAME
-    location: Copenhagen
-    country: Denmark
+
   - title: The Future of Automation
     year: 2009  
     code: P09B
@@ -332,13 +174,6 @@ conferences:
     conference: European Transport Conference
     location: Leiden
     country: Netherlands 
-  - title: Optimisation Techniques to Automated Container Terminals, Application of Robust Optimisation
-    year: 2007  
-    code: P07B
-    authors: Angeloudis P and Bell MGH
-    conference: UTSG
-    location: Harrogate`
-    country: United Kingdom
   - title: Implementation of an Automated Guided Vehicle dispatching and scheduling framework using robust optimisation
     year: 2007
     code: P07C
