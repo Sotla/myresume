@@ -14,6 +14,6 @@ The code requires Python 3. To shell script below can be used to setup the build
 sudo apt-get install texlive-latex-base texlive-latex-extra texlive-latex-recommended xzdec
 pip install cheetah3 tex pyyaml
 tlmgr init-usertree
-tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final 
+tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final
 tlmgr install biblatex logreq
 ```
