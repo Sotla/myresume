@@ -1,9 +1,11 @@
 research_contib:
   - area: Editorial Board Memberships
     items: 
+      - Maritime Policy and Management - Associate Editor
       - Journal of Shipping and Trade - Editorial Board Member
+      - Modern Supply Chain Research and Applications - Associate Editor
       - Transportmetrica B - Guest Editor (Dynamic Modelling and Optimisation of Transportation Systems in the Connected Era)
-  - area: Grant Proposal Reviews
+  - area: Funding Review Panels
     items:
       - Engineering and Physical Sciences Research Council (United Kingdom)
       - Royal Society (United Kingdom)
@@ -34,20 +36,20 @@ research_contib:
        - Simulation Modelling Practice and Theory
        - Transportation
        - Transportation Planning and Technology
-       - Transportation Research Part A Policy and Practice
-       - Transportation Research Part B Methodological
-       - Transportation Research Part C Emerging Technologies
-       - Transportation Research Part D Transport and Environment
-       - Transportation Research Part E Logistics and Transportation
+       - Transportation Research Part A - Policy and Practice
+       - Transportation Research Part B - Methodological
+       - Transportation Research Part C - Emerging Technologies
+       - Transportation Research Part D - Transport and Environment
+       - Transportation Research Part E - Logistics and Transportation
        - Transportmetrica A
   - area: Conference Programme Committee Memberships
     items:
-      - International Network Operations Conference
-      - International Conference on Computational Logistics
-      - Transport Research Board Annual Meeting 
-      - International Association of Maritime Economists
-      - International IEEE Annual Conference on Intelligent Transportation Systems
-      - Logistics and Maritime Systems
+      - International Network Operations Conference (INOC)
+      - International Conference on Computational Logistics (ICCL)
+      - Transport Research Board Annual Meeting (TRB-AM)
+      - International Association of Maritime Economists (IAME)
+      - International IEEE Annual Conference on Intelligent Transportation Systems (IEEE ITS)
+      - Logistics and Maritime Systems (LOGMS)
 
 phdexams:
   - name: Dr Sophie Damy
@@ -65,7 +67,6 @@ phdexams:
   - name: Dr Enrique Martin Alcade
     institution: Universitat Politechnica de Catalonia
     year: 2014
-
 
 teaching_contib:
   - progamme: MSc in Transport
@@ -113,5 +114,3 @@ media_coverage:
     org: Kathimerini
     title: Research Spotlight - Panagiotis Angeloudis
     link: http://www.kathimerini.gr/69853/article/epikairothta/ereynes/panagiwths-aggeloydhs
-
-
