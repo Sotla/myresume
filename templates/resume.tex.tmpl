@@ -28,6 +28,7 @@ directiveStartToken = !
 \hfuzz=3pt  	%suppresses overfull hbox errors
 \hbadness=10000
 
+\usepackage[T1]{fontenc}
 
 %\Bibliography
 \usepackage{enumitem}
@@ -103,12 +104,12 @@ London, SW7 2BU, United Kingdom                   & \textit{web:}    & imperial.
 \end{tabular}
 
 \pdfbookmark[section]{Research Interests}{sec1}
-\section{\textsc{Research} \\ Interests}
+\section{\textsc{Research Interests}}
 Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
 Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \pdfbookmark[section]{Academic Positions}{sec2}
-\section{\textsc{Academic} \\ Positions}
+\section{\textsc{Academic Positions}}
 !for ;entry in ;aca_posts
 	{\textbf{;entry.org_name} }, ;entry.org_location \\
 	!if ;entry.roles
@@ -125,7 +126,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Professional Positions}{sec3}
-\section{\textsc{Professional} \\ Positions}
+\section{\textsc{Professional Positions}}
 !for ;entry in ;pro_posts
 	{\textbf{;entry.org_name} }, ;entry.org_location \\
 	!if ;entry.roles
@@ -142,21 +143,21 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Professional Affiliations}{sec4}
-\section{\textsc{Professional} \\ Affiliations}
+\section{\textsc{Professional Affiliations}}
 !for ;entry in ;pro_affiliations
     {\textbf{;entry.title} } ;entry.organisation\\
 !end for
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Education}{sec5}
-\section{\textsc{Education} }
+\section{\textsc{Education}}
 {\textbf{Imperial College London} }\label{sec:sceducation}, United Kingdom\\
 \textit{PhD in Transport Engineering} \hfill {\textbf{Oct 2005 - Nov 2009} }\\
 \textit{MEng in Civil \& Environmental Engineering (First Class Honours)} \hfill {\textbf{Oct 2001 - Jun 2005} }\\
 
 \vspace{-0.1in}
 \pdfbookmark[section]{Committees & Advisory}{ext_committees}
-\section{\textsc{Committees} \\ \&  Advisory}
+\section{\textsc{Advisory}}
 \vspace{+0.1in}
 !for ;entry in ;ext_committees
 	\begin{minipage}{\textwidth}
@@ -169,7 +170,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Research Grants}{sec6}
-\section{\textsc{Research} \\ Grants}
+\section{\textsc{Research Grants}}
 !set ;sumtext=0
 !for ;entry in ;research_grants
 	\vspace{0.03in}
@@ -193,7 +194,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 }}
 
 \pdfbookmark[section]{Research Contracts}{sec7}
-\section{\textsc{Research} \\ Contracts}
+\section{\textsc{Research Contracts}}
 !set ;sumtext=0
 
 !for ;entry in ;research_contracts
@@ -218,7 +219,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 ##}}
 
 \pdfbookmark[section]{PhD Thesis Supervision}{sec8}
-\section{\textsc{PhD Thesis} \\ Supervision}
+\section{\textsc{PhD Students}}
 !for ;entry in ;phd_students
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
@@ -230,7 +231,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.15in}
 \pdfbookmark[section]{Postdoctoral Researchers}{postdocs}
-\section{\textsc{Postdoctoral} \\ Researchers}
+\section{\textsc{Postdoctoral Researchers}}
 !for ;entry in ;postdocs
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
@@ -242,7 +243,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.10in}
 \pdfbookmark[section]{Research Administration}{sec10}
-\section{\textsc{Research} \\ Administration}
+\section{\textsc{Research \\ Administration}}
 \vspace{0.05in}
 !for ;entry in ;research_contib
 	\begin{minipage}{\textwidth}
@@ -260,7 +261,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.15in}
 \pdfbookmark[section]{PhD Examinations}{sec11}
-\section{\textsc{PhD Candidates} \\ Examined}
+\section{\textsc{PhD Examinations}}
 !for ;entry in ;phdexams
 	\begin{minipage}{\textwidth}
 	{\textbf{;entry.name} } \textit{(;entry.institution)} \hfill {\textbf{;entry.year} }
@@ -269,14 +270,14 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 !end for
 
 \pdfbookmark[section]{Teaching Contributions}{sec12}
-\section{\textsc{Teaching} \\ Contributions}
+\section{\textsc{Teaching Contributions}}
 !for ;entry in ;teaching_contib
 	{\textbf{;entry.progamme} },\textit{;entry.role} \hfill {\textbf{;entry.years} }\\
 !end for
 
 \vspace{-0.15in}
 \pdfbookmark[section]{Dissertation Supervision}{sec13}
-\section{\textsc{Dissertation}  \\ Supervision}
+\section{\textsc{Dissertation Supervision}}
 \vspace{0.15in}
 !set ;minfrom = 9999
 !set ;minto = 0
@@ -368,7 +369,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \end{etaremune}
 
 \pdfbookmark[section]{Invited Talks}{invitedtalks}
-\section{\textsc{Invited\\ Talks}}
+\section{\textsc{Invited \\ Talks}}
 \begin{etaremune}
 \renewcommand\labelenumi{T\theenumi. }
 !for ;entry in ;invitedtalks
@@ -378,7 +379,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \end{etaremune}
 
 \pdfbookmark[section]{Media Coverage}{mediacoverage}
-\section{\textsc{Media \\ Coverage}}
+\section{\textsc{Media Coverage}}
 !for ;entry in ;media_coverage
 	\begin{minipage}{\textwidth}
 	{\textbf{;entry.org} } (;entry.date).\textit{"{;entry.title}"}	\end{minipage}
