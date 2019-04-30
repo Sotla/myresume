@@ -81,7 +81,7 @@ directiveStartToken = !
 
 \begin{document}
 
-\moveleft.7\hoffset\centerline{\LARGE\bf Panagiotis Angeloudis}
+\moveleft.7\hoffset\centerline{\LARGE\textbf{Panagiotis Angeloudis} }
 
 \vspace{.05in}\moveleft.7\hoffset\centerline{\small PHD, MEng, DIC, ACGI, MCILT}
 
@@ -92,28 +92,28 @@ directiveStartToken = !
 \vspace{-.1in}
 \moveleft.7\hoffset\centerline{\small\textit{Last updated: \today}}
 
-\section{\sc Contact Information}
+\section{\textsc{Contact Information} }
 \begin{tabular}{@{}p{3in}p{0.3in}p{3in}}
 
-Room 337, Skempton Building                       & {\it phone:} & +44 207 594 5986  \\
-Department of Civil \& Environmental Engineering  & {\it skype:} & panagiotis.angeloudis \\
-Imperial College London                           & {\it email:} & p.angeloudis@imperial.ac.uk\\
-London, SW7 2BU, United Kingdom                   & {\it web:}   & imperial.ac.uk/people/p.angeloudis \\     
+Room 337, Skempton Building                       & \textit{phone:}  & +44 207 594 5986  \\
+Department of Civil \& Environmental Engineering  & \textit{skype:}  & panagiotis.angeloudis \\
+Imperial College London                           & \textit{email:}  & p.angeloudis@imperial.ac.uk\\
+London, SW7 2BU, United Kingdom                   & \textit{web:}    & imperial.ac.uk/people/p.angeloudis \\
 
 \end{tabular}
 
 \pdfbookmark[section]{Research Interests}{sec1}
-\section{\sc Research\\ Interests}
+\section{\textsc{Research} \\ Interests}
 Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
 Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \pdfbookmark[section]{Academic Positions}{sec2}
-\section{\sc Academic\\ Positions}
+\section{\textsc{Academic} \\ Positions}
 !for ;entry in ;aca_posts
-	{\bf ;entry.org_name}, ;entry.org_location \\
+	{\textbf{;entry.org_name} }, ;entry.org_location \\
 	!if ;entry.roles
 	!for ;entry1 in ;entry.roles
-		\tab[0.2in] \textit{;entry1.position_name} \hfill {\bf ;entry1.position_from - ;entry1.position_to}\\
+		\tab[0.2in] \textit{;entry1.position_name} \hfill {\textbf{;entry1.position_from - ;entry1.position_to} }\\
 		!if ;entry1.get("subroles", None) != None
 		!for ;subrole in ;entry1.subroles
 			\tab[0.4in] ;subrole \\
@@ -125,12 +125,12 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Professional Positions}{sec3}
-\section{\sc Professional\\ Positions}
+\section{\textsc{Professional} \\ Positions}
 !for ;entry in ;pro_posts
-	{\bf ;entry.org_name}, ;entry.org_location \\
+	{\textbf{;entry.org_name} }, ;entry.org_location \\
 	!if ;entry.roles
 	!for ;entry1 in ;entry.roles
-		\tab[0.2in] \textit{;entry1.position_name} \hfill {\bf ;entry1.position_from - ;entry1.position_to}\\
+		\tab[0.2in] \textit{;entry1.position_name} \hfill {\textbf{;entry1.position_from - ;entry1.position_to} }\\
 		!if ;entry1.get("subroles", None) != None
 		!for ;subrole in ;entry1.subroles
 			\tab[0.4in] ;subrole \\
@@ -142,25 +142,25 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Professional Affiliations}{sec4}
-\section{\sc Proffesional\\ Affiliations}
+\section{\textsc{Professional} \\ Affiliations}
 !for ;entry in ;pro_affiliations
-    {\bf ;entry.title} ;entry.organisation\\
+    {\textbf{;entry.title} } ;entry.organisation\\
 !end for
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Education}{sec5}
-\section{\sc Education}
-{\bf Imperial College London}, United Kingdom\\
-\textit{PhD in Transport Engineering} \hfill {\bf Oct 2005 - Nov 2009}\\
-\textit{MEng in Civil \& Enviornmnetal Engineering (First Class Honours)} \hfill {\bf Oct 2001 - Jun 2005}\\
+\section{\textsc{Education} }
+{\textbf{Imperial College London} }\label{sec:sceducation}, United Kingdom\\
+\textit{PhD in Transport Engineering} \hfill {\textbf{Oct 2005 - Nov 2009} }\\
+\textit{MEng in Civil \& Environmental Engineering (First Class Honours)} \hfill {\textbf{Oct 2001 - Jun 2005} }\\
 
 \vspace{-0.1in}
 \pdfbookmark[section]{Committees & Advisory}{ext_committees}
-\section{\sc Committees\\ \&  Advisory}
+\section{\textsc{Committees} \\ \&  Advisory}
 \vspace{+0.1in}
 !for ;entry in ;ext_committees
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.organisation} \hfill {\bf ;entry.dates} \\
+	{\textbf{;entry.organisation} } \hfill {\textbf{;entry.dates} } \\
 	\tab[0.2in] \textit{;entry.description}
 	\end{minipage}
 	\vspace{0.02in}
@@ -169,13 +169,13 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Research Grants}{sec6}
-\section{\sc Research\\ Grants}
+\section{\textsc{Research} \\ Grants}
 !set ;sumtext=0
 !for ;entry in ;research_grants
 	\vspace{0.03in}
 	!set ;sumtext+= int(;entry.value)
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.name} \hfill {\bf ;entry.year} \\
+	{\textbf{;entry.name} } \hfill {\textbf{;entry.year} } \\
 	\tab[0.2in] \textsterling{
 	!echo("{:,}".format(int(;entry.value)).rjust(7).replace(" ","\space"))
 	}
@@ -193,14 +193,14 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 }}
 
 \pdfbookmark[section]{Research Contracts}{sec7}
-\section{\sc Research\\ Contracts}
+\section{\textsc{Research} \\ Contracts}
 !set ;sumtext=0
 
 !for ;entry in ;research_contracts
 	\vspace{0.03in}
 	!set ;sumtext+= int(;entry.value)
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.name} \hfill {\bf ;entry.year} \\
+	{\textbf{;entry.name} } \hfill {\textbf{;entry.year} } \\
 	\tab[0.2in] 
 	##\textsterling{
 	##!echo("{:,}".format(int(;entry.value)).rjust(7).replace(" ","\space"))
@@ -218,11 +218,11 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 ##}}
 
 \pdfbookmark[section]{PhD Thesis Supervision}{sec8}
-\section{\sc PhD Thesis\\ Supervision}
+\section{\textsc{PhD Thesis} \\ Supervision}
 !for ;entry in ;phd_students
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.name} \hfill {\bf ;entry.from - ;entry.to} \\
+	{\textbf{;entry.name} } \hfill {\textbf{;entry.from - ;entry.to} } \\
 	\tab[0.2in] \textit{;entry.title}
 	\end{minipage}
 	\\
@@ -230,11 +230,11 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.15in}
 \pdfbookmark[section]{Postdoctoral Researchers}{postdocs}
-\section{\sc Postoctoral\\ Researchers}
+\section{\textsc{Postdoctoral} \\ Researchers}
 !for ;entry in ;postdocs
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.name} \hfill {\bf ;entry.from - ;entry.to} \\
+	{\textbf{;entry.name} } \hfill {\textbf{;entry.from - ;entry.to} } \\
 	\tab[0.2in] \textit{;entry.project}
 	\end{minipage}
 	\\
@@ -242,11 +242,11 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.10in}
 \pdfbookmark[section]{Research Administration}{sec10}
-\section{\sc Research\\ Administration}
+\section{\textsc{Research} \\ Administration}
 \vspace{0.05in}
 !for ;entry in ;research_contib
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.area} \\
+	{\textbf{;entry.area} } \\
 	\vspace{0.1in}
 	\begin{minipage}{\textwidth}
 	\setlength{\leftskip}{0.2in}
@@ -260,23 +260,23 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.15in}
 \pdfbookmark[section]{PhD Examinations}{sec11}
-\section{\sc PhD Candidates\\ Examined}
+\section{\textsc{PhD Candidates} \\ Examined}
 !for ;entry in ;phdexams
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.name} \textit{(;entry.institution)} \hfill {\bf ;entry.year}
+	{\textbf{;entry.name} } \textit{(;entry.institution)} \hfill {\textbf{;entry.year} }
 	\vspace{0.03in}
 	\end{minipage}
 !end for
 
 \pdfbookmark[section]{Teaching Contributions}{sec12}
-\section{\sc Teaching\\ Contributions}
+\section{\textsc{Teaching} \\ Contributions}
 !for ;entry in ;teaching_contib
-	{\bf ;entry.progamme},\textit{;entry.role} \hfill {\bf ;entry.years}\\
+	{\textbf{;entry.progamme} },\textit{;entry.role} \hfill {\textbf{;entry.years} }\\
 !end for
 
 \vspace{-0.15in}
 \pdfbookmark[section]{Dissertation Supervision}{sec13}
-\section{\sc Dissertation \\ Supervision}
+\section{\textsc{Dissertation}  \\ Supervision}
 \vspace{0.15in}
 !set ;minfrom = 9999
 !set ;minto = 0
@@ -297,7 +297,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	\parskip=0in
 	\hangindent=0.45in
 	\hangafter=1
-	{\bf;currentyear }
+	{\textbf{;currentyear} }
 	!set ;joine = 0
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	!set ;temp = ""
@@ -342,21 +342,23 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 	!end if
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	!set ;currentyear = int(;currentyear)-1
-	\par
+
 !end while
 
 \nocite{*}
 
+\vspace{-0.15in}
+
 \pdfbookmark[section]{Publications}{sec14}
-\section{\sc {Publications}}
+\section{\textsc{Publications}}
 \printbibliography[heading=none,type=article,resetnumbers=true]
 
 \pdfbookmark[section]{Book Chapters}{sec15}
-\section{\sc {Book Chapters}}
+\section{\textsc{Book Chapters}}
 \printbibliography[heading=none,type=incollection,resetnumbers=true]
 
 \pdfbookmark[section]{Conferences}{sec16}
-\section{\sc {Conferences}}
+\section{\textsc{Conferences}}
 \begin{etaremune}
 \renewcommand\labelenumi{C\theenumi. }
 !for ;entry in ;conferences
@@ -366,7 +368,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \end{etaremune}
 
 \pdfbookmark[section]{Invited Talks}{invitedtalks}
-\section{\sc {Invited\\ Talks}}
+\section{\textsc{Invited\\ Talks}}
 \begin{etaremune}
 \renewcommand\labelenumi{T\theenumi. }
 !for ;entry in ;invitedtalks
@@ -375,11 +377,11 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 !end for
 \end{etaremune}
 
-\pdfbookmark[section]{Media Coverage}{media_coverage}
-\section{\sc {Media \\ Coverage}}
+\pdfbookmark[section]{Media Coverage}{mediacoverage}
+\section{\textsc{Media \\ Coverage}}
 !for ;entry in ;media_coverage
 	\begin{minipage}{\textwidth}
-	{\bf ;entry.org} (;entry.date).\textit{"{;entry.title}"}	\end{minipage}
+	{\textbf{;entry.org} } (;entry.date).\textit{"{;entry.title}"}	\end{minipage}
 	\\
 !end for
 

@@ -1,6 +1,6 @@
 research_grants:
   - name: Validating autonomous vehicle safety using simulation and adaptive test generation
-    year: 2018
+    year: 2019
     source: InnovateUK
     value: 769417
   - name: A radical mode shift enabled by autonomous pods
@@ -80,6 +80,11 @@ research_grants:
     value: 538302
 
 research_contracts:
+  - name: Design and Implementation of a Logistics Fleet Management System
+    short: Optimisation of logistics fleet operations 
+    year: 2019
+    source: Private Client
+    value: 40000
   - name: Optimisation of Prefabrication Strategies for Nuclear Construction
     short: Optimisation nuclear construction strategies 
     year: 2017
