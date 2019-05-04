@@ -62,7 +62,7 @@ directiveStartToken = !
 \newrobustcmd*{\mkbibarticledesc}[1]{%
    J\number\numexpr\csuse{articleentrycount:\therefsection}+1-#1}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for articles with J prefix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for Book Chapters with B prefix
 
 \AtDataInput[incollection]{%
  \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
@@ -75,7 +75,25 @@ directiveStartToken = !
 \newrobustcmd*{\mkbibbookdesc}[1]{%
    B\number\numexpr\csuse{bookentrycount:\therefsection}+1-#1\relax}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for Conference Papers with C prefix
+
+\AtDataInput[inproceedings]{%
+ \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
+  \listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
+  \csnumgdef{conferencecount:\therefsection}{%
+      \csuse{conferencecount:\therefsection}+1}}}
+
+\DeclareFieldFormat[inproceedings]{labelnumber}{\mkconfdesc{#1}}
+
+\newrobustcmd*{\mkconfdesc}[1]{%
+   C\number\numexpr\csuse{conferencecount:\therefsection}+1-#1\relax}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \bibliography{publications.bib}
 
@@ -359,25 +377,19 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \section{\textsc{Book Chapters}}
 \printbibliography[heading=none,type=incollection,resetnumbers=true]
 
-\pdfbookmark[section]{Conferences}{sec16}
-\section{\textsc{Conferences}}
-\begin{etaremune}
-\renewcommand\labelenumi{C\theenumi. }
-!for ;entry in ;conferences
-	\item
-	{;entry.authors}. "{;entry.title}". \textit{;entry.conference} (;entry.year), ;entry.location, ;entry.country
-!end for
-\end{etaremune}
+\pdfbookmark[section]{Conference Proceedings}{sec16}
+\section{\textsc{Conference Papers}}
+\printbibliography[heading=none,type=inproceedings,resetnumbers=true]
 
-\pdfbookmark[section]{Invited Talks}{invitedtalks}
-\section{\textsc{Invited \\ Talks}}
-\begin{etaremune}
-\renewcommand\labelenumi{T\theenumi. }
-!for ;entry in ;invitedtalks
-	\item
-	;entry.organisation (;entry.year).\textit{"{;entry.title}"} ;entry.location, ;entry.country
-!end for
-\end{etaremune}
+%\pdfbookmark[section]{Invited Talks}{invitedtalks}
+%\section{\textsc{Invited \\ Talks}}
+%\begin{etaremune}
+%\renewcommand\labelenumi{T\theenumi. }
+%!for ;entry in ;invitedtalks
+%	\item
+%	;entry.organisation %(;entry.year).\textit{"{;entry.title}"} ;entry.location, %;entry.country
+%!end for
+%\end{etaremune}
 
 \pdfbookmark[section]{Media Coverage}{mediacoverage}
 \section{\textsc{Media Coverage}}

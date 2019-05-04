@@ -79,11 +79,13 @@ def latex_build():
     os.system("pdflatex resume.tex")
     os.system("pdflatex resume.tex")
     copyfile("resume.pdf", "Angeloudis-CV.pdf")
-
+    # os.system("cmd.exe /c start Angeloudis-CV.pdf")
 
 def prep_dirs():
-    if os.path.exists(output_dir):
-        shutil.rmtree(output_dir)
+    if not os.listdir(output_dir):
+        filelist = [ f for f in os.listdir(output_dir) ]
+        for f in filelist:
+            os.remove(os.path.join(output_dir, f))
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
