@@ -62,6 +62,20 @@ directiveStartToken = !
 \newrobustcmd*{\mkbibarticledesc}[1]{%
    J\number\numexpr\csuse{articleentrycount:\therefsection}+1-#1}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for Working Papers with W prefix
+
+\AtDataInput[unpublished]{%
+ \xifinlistcs{\thefield{entrykey}}{entrylist:\therefsection}{}{%
+  \listcsxadd{entrylist:\therefsection}{\thefield{entrykey}}%
+  \csnumgdef{unpublishedcount:\therefsection}{%
+      \csuse{unpublishedcount:\therefsection}+1}}}
+
+\DeclareFieldFormat[unpublished]{labelnumber}{\mkupnpubdesc{#1}}
+
+\newrobustcmd*{\mkupnpubdesc}[1]{%
+   W\number\numexpr\csuse{unpublishedcount:\therefsection}+1-#1\relax}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			%reverse numbering for Book Chapters with B prefix
 
 \AtDataInput[incollection]{%
@@ -369,9 +383,13 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 
 \vspace{-0.15in}
 
-\pdfbookmark[section]{Publications}{sec14}
-\section{\textsc{Publications}}
+\pdfbookmark[section]{Journal Articles}{sec14}
+\section{\textsc{Journal Articles}}
 \printbibliography[heading=none,type=article,resetnumbers=true]
+
+\pdfbookmark[section]{Working Papers}{sec14}
+\section{\textsc{Working Papers}}
+\printbibliography[heading=none,type=unpublished,resetnumbers=true]
 
 \pdfbookmark[section]{Book Chapters}{sec15}
 \section{\textsc{Book Chapters}}
