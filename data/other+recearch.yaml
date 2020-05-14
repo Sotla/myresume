@@ -52,6 +52,9 @@ research_contib:
       - Logistics and Maritime Systems (LOGMS)
 
 phdexams:
+  - name: Dr Alkis Papadimoulis
+    institution: Imperial College London
+    year: 2019
   - name: Dr Sophie Damy
     institution: Imperial College London
     year: 2017
@@ -78,11 +81,14 @@ teaching_contib:
   - progamme: CI423 Operations Research
     role: Contributor
     years: 2012-present
+  - progamme: CI120 Mathematics
+    role: Contributor
+    years: 2012-2015
   - progamme: T24 Ports and Maritime Transport 
     role: Module Coordinator
     years: 2012-present
   - progamme: T20 Freight Transport
-    role: Module Coordinator
+    role: Contributor
     years: 2012-2017
   - progamme: Advanced Programming for Finance
     role: Module Coordinator
@@ -104,7 +110,7 @@ media_coverage:
     link: http://www.tankershipping.com/news/view,head-of-shell-shipping-maritime-appointed-to-uk-government-maritime-strategy-dream-team_51241.htm
   - date: March 2018
     org: Supply Chain - Greece
-    title: Υποδοχή της Προέδρου Gast από τους Συλλόγους Αποφοίτων του Imperial College London στην Ελλάδα 
+    title: Reception of President Gast by the Imperial College Alumni Association in Greece
     link: http://www.supply-chain.gr/υποδοχή-της-προέδρου-gast-από-τους-συλλόγ/
   - date: September 2017
     org: Associated Press

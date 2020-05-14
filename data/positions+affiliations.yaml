@@ -32,12 +32,6 @@ aca_posts:
         position_to: Jun 2013                         
 
 pro_posts:
-  - org_name: CharterDirect Shipping Ltd.
-    org_location: London, United Kingdom
-    roles:
-    - position_name: Chief Scientific Advisor
-      position_from: May 2018
-      position_to: present 
   - org_name: United Nations
     org_location: Geneva, Switzerland
     roles:
@@ -63,12 +57,21 @@ ext_committees:
   - organisation: UK Department for Transport (DfT)
     dates: 2018 - Present
     description: Expert Panel, Maritime 2050
+  - organisation: Hyphen Mobility
+    dates: 2018 - Present
+    description: Scientific Advisor
   - organisation: LOGMS Scientific Advisory Committee
     dates: 2016 - Present
     description: Elected Member  
   - organisation: Ports and Channels Committee, Transportation Research Board    
     dates: 2014 - Present
     description: Research Coordinator, Committee Member
+  - organisation: CharterDirect Shipping Ltd.
+    dates: 2017 - 2019
+    description: Scientific Advisor
+  - organisation: United Nations World Food Programme
+    dates: 2017 - 2018
+    description: Member, UAV Coordination Working Group
   - organisation: UK Government Office of Science (UK-GoS)
     dates: 2017 - 2018
     description: Advisor, Future of Mobility Programme
