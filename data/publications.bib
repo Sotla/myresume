@@ -1,5 +1,13 @@
 % Journal Articles
-@article{J2020Karamanis1,
+@article{2020Escribano2,
+	author 		= {Escribano J and Goldbeck N and Hsu PY and Angeloudis P and Ochieng W},
+	title 		= {Endogenous stochastic optimisation for relief distribution assisted with Unmanned Aerial Vehicles},
+	journal 	= {OR Spectrum},
+	note 		= {In Press},
+	year 		= {2020},
+	abstract = { Unmanned Aerial Vehicles (UAVs) are being increasingly integrated into humanitarian operations given the growing economic pressure on organisations providing disaster relief. Among other applications, UAV-based damage assessment during relief delivery has been the focus of respondents, yet there is a lack of research into formalising a problem that considers both aspects simultaneously. This paper presents a novel endogenous stochastic vehicle routing problem that coordinates UAV deployments and relief vehicle dispatches to minimise overall mission cost. The algorithm considers uncertain damage levels in a transport network, with UAVs revealing actual damage levels by performing rapid network assessment. Ground vehicles are simultaneously routed based on the information gathered by the UAVs. A greedy extact solution approach and an adapted Genetic Algorithm are used to solve a case study based on the 2010 Haiti earthquake. Both approaches provide significant improvements in vehicle travel time over a deterministic approach reported, and are used to quantify the benefits of UAV-assisted response.},
+}
+@article{2020Karamanis1,
   author    = {Karamanis R and Anastasiadis L and Angeloudis P and Stettler M},
   title     = {Assignment and pricing of shared rides in ride-sourcing using combinatorial double auctions},
   journal   = {IEEE Transactions on Intelligent Transportation Systems},
@@ -8,7 +16,7 @@
   doi       = {10.1109/TITS.2020.2988356},
   abstract  = {Transportation Network Companies employ dynamic pricing methods at periods of peak travel to incentivise driver participation and balance supply and demand for rides. Surge pricing multipliers are commonly used and are applied following demand and estimates of customer and driver trip valuations. Combinatorial double auctions have been identified as a suitable alternative, as they can achieve maximum social welfare in the allocation by relying on customers and drivers stating their valuations. A shortcoming of current models, however, is that they fail to account for the effects of trip detours that take place in shared trips and their impact on the accuracy of pricing estimates. To resolve this, we formulate a new shared-ride assignment and pricing algorithm using combinatorial double auctions. We demonstrate that this model is reduced to a maximum weighted independent set model, which is known to be APX-hard. A fast local search heuristic is also presented, which is capable of producing results that lie within 10% of the exact approach for practical implementations. Our proposed algorithm could be used as a fast and reliable assignment and pricing mechanism of ride-sharing requests to vehicles during peak travel times.},
 }
-@article{J2020Hsu1,
+@article{2020Hsu1,
 	author 	= 	{Hsu PY and Aurisicchio M and Angeloudis P and Whyte J},
 	title 		= {Understanding and Visualising Schedule Deviations in Construction Projects using Fault Tree Analysis},
 	journal 	= {Engineering, Construction and Architectural Management},
@@ -17,7 +25,7 @@
 	abstract = {Delays in construction projects are both disruptive and expensive. Thus, potential causes of schedule deviation need to be identified and mitigated. In previous research, delay factors were predominantly identified through surveys administered to stakeholders in construction projects. Such delay factors are typically considered individually and presented at the same level without explicitly examining their sequence of occurrence and interrelationships. In reality, owing to the complex structure of construction projects and long execution time, non-conformance to schedule occurs by a chain of cascading events. An understanding of these linkages is important not only for minimising the delays, but also for revealing the liability of stakeholders. To explicitly illustrate the cause-effect and logical relationship between delay factors and further identify the primary factors which possess the highest significance toward the overall project schedule delay, the fault tree analysis (FTA) method, a widely implemented approach to root cause problems in safety-critical systems, has been systematically and rigorously executed.},
 }
 
-@article{J2020Escribano3,
+@article{2020Escribano3,
 	author 		= {Otero A and Escribano J and Angeloudis P},
 	title 		= {Design of hospital delivery networks using unmanned aerial vehicles},
 	journal 	= {Transportation Research Record},
@@ -26,7 +34,7 @@
 	abstract = {Unmanned Aerial Vehicles (UAVs) are being increasingly implemented in a range of applications. Their low payload capacity and ability to overcome congested road networks enables them to provide fast delivery services for urgent high-value low-volume cargo. This work investigates the economic viability of integrating UAVs into urban hospital supply chains. In doing so, a strategic model that determines the optimal configuration of supporting infrastructure for urgent UAV delivery between hospitals is proposed. The model incorporates a tailored facility location algorithm that selects an optimal number of hubs given a set of candidates and determines the number of UAVs required to fulfil total demand. The objective is to minimize the total cost of implementation, computed as the sum of generalised, battery, vehicle and hub establishment costs. The model is applied to a case study based on the establishment of a UAV delivery network for deliveries between NHS hospitals in London. A baseline scenario is also developed using current NHS vehicles for delivery. Our results demonstrate that UAV-based delivery provide significant reductions in operational costs compared to the baseline. Furthermore, our analysis indicates the location of hubs is more significant to the solution optimality than any increase in range or payload.},
 }
 
-@article{J2020Escribano2,
+@article{2020Escribano2,
 	author 		= {Escribano J and Angeloudis P and Ochieng W},
 	title 		= {Optimal Design of Rapid Evacuation Strategies in Constrained Urban Transport Networks},
 	journal 	= {Transportmetrica A: Transport Science},
@@ -36,7 +44,7 @@
 	abstract = {Large-scale evacuations constitute common life-saving exercises that are activated in many disaster response campaigns. Their effectiveness is often inhibited by traffic congestion, disrupted and imperfect coordination mechanisms, and the poor state of the underlying transportation networks. To address this problem, this paper presents a hybrid simulation-optimisation methodology to optimise evacuation response strategies through demand staging and signal phasing. We introduce a pre-planning model that evaluates evacuation policies, using a low-level dynamic traffic assignment model that captures the effects of congestion, queuing and vehicle spillback. Optimal strategies are determined using derivative-free optimisation algorithms, applied to an evacuation problem based on a benchmark dataset. The effects of varying the number of activated paths and the frequency of departure under different network conditions are observed. Our analysis indicates that combined departure time scheduling and signal phasing is a promising method to improve evacuation efficiency when compared to a worst-case benchmark scenario.}
 }
 
-@article{J2020Chen1,
+@article{2020Chen1,
 	Author 		= {Chen X and Yu j and Stettler M and Angeloudis P and Hu J},
 	Title 		= {Urban Network-Wide Traffic Speed Estimation with Massive Ride-Sourcing GPS Traces},
 	journal 	= "Transportation Research Part C: Emerging Technologies",
@@ -44,7 +52,7 @@
 	abstract 	= {The ability to obtain accurate estimates of city-wide urban traffic patterns is essential for the development of effective intelligent transportation systems and the efficient operation of smart mobility platforms. This paper focuses on the network-wide traffic speed estimation, using trajectory data generated by a city-wide fleet of ride-sourcing vehicles equipped with GPS-capable smartphones. A cell-based map-matching technique is proposed to link vehicle trajectories with road geometries, and to produce network-wide spatio-temporal speed matrices. Data limitations are addressed using the Schatten p-norm matrix completion algorithm, which can minimize speed estimation errors even with high rates of data unavailability. A case study using data from Chengdu, China, demonstrates that the algorithm performs well even in situations involving continuous data loss over a few hours, and consequently, addresses large-scale network-wide traffic state estimation problems with missing data, while at the same time outperforming other data recovery techniques that were used as benchmarks. Our approach can be used to generate congestion maps that can help monitor and visualize traffic dynamics across the network, and therefore form the basis for new traffic management, proactive congestion identification, and congestion mitigation strategies.},
 }
 
-@article{J2020Goldbeck1,
+@article{2020Goldbeck1,
 	author 	= {Goldbeck N and Angeloudis P and Ochieng W},
 	title 	= "Optimal supply chain resilience with consideration of failure propagation and repair logistics",
 	journal = "Transportation Research Part E: Logistics and Transportation Review",
@@ -55,7 +63,7 @@
 	abstract = "The joint optimisation of investments in capacity and repair capability of production and logistics systems at risk of being damaged is an important aspect of supply chain resilience that is not sufficiently addressed by state-of-the-art modelling approaches. Furthermore, logistical issues of procuring repair resources impact speed of recovery but are not considered in most existing models. This paper presents a novel multi-stage stochastic programming model that optimizes pre-disruption investment decisions, as well as post-disruption dynamic adjustment of supply chain operations and allocation of repair resources. A case study demonstrates how the method can quantify the effects of pooling repair resources.",
 }
 
-@article{J2020Escribano1,
+@article{2020Escribano1,
 	author 	= {Escribano J and Angeloudis P and Ochieng W},
 	journal = "Transportation Research Part C: Emerging Technologies",
 	title 	= {Optimal Hub Selection for Rapid Medical Deliveries using Unmanned Aerial Vehicles},
@@ -280,28 +288,21 @@
 }
 
 
-
-
-
-
-
-
-
-% Unpublished
-@unpublished{U2019Escribano1,
-	author 		= {Escribano J and Goldbeck N and Hsu PY and Angeloudis P and Ochieng W},
-	title 		= {Endogenous stochastic optimisation for relief distribution assisted with Unmanned Aerial Vehicles},
-	note 		= {In Review},
-	url 		= {http://www.optimization-online.org/DB_FILE/2018/12/6961.pdf},	
-	year 	= {2019},
-	abstract = { Unmanned Aerial Vehicles (UAVs) are being increasingly integrated into humanitarian operations given the growing economic pressure on organisations providing disaster relief. Among other applications, UAV-based damage assessment during relief delivery has been the focus of respondents, yet there is a lack of research into formalising a problem that considers both aspects simultaneously. This paper presents a novel endogenous stochastic vehicle routing problem that coordinates UAV deployments and relief vehicle dispatches to minimise overall mission cost. The algorithm considers uncertain damage levels in a transport network, with UAVs revealing actual damage levels by performing rapid network assessment. Ground vehicles are simultaneously routed based on the information gathered by the UAVs. A greedy extact solution approach and an adapted Genetic Algorithm are used to solve a case study based on the 2010 Haiti earthquake. Both approaches provide significant improvements in vehicle travel time over a deterministic approach reported, and are used to quantify the benefits of UAV-assisted response.},
+@unpublished{2020Karamanis2,
+  author    = {Karamanis R and Anastasiadis L and Angeloudis P and Stettler M},
+  title     = {Assignment and Pricing of Shared Rides in Ride-Sourcing using Combinatorial Double Auctions},
+  year      = {2020},
+  note 		= {In Review},
+  abstract  = {Transportation Network Companies employ dynamic pricing methods at periods of peak travel to incentivise driver participation and balance supply and demand for rides. Surge pricing multipliers are commonly used and are applied following demand and estimates of customer and driver trip valuations. Combinatorial double auctions have been identified as a suitable alternative, as they can achieve maximum social welfare in the allocation by relying on customers and drivers stating their valuations. A shortcoming of current models, however, is that they fail to account for the effects of trip detours that take place in shared trips and their impact on the accuracy of pricing estimates. To resolve this, we formulate a new shared-ride assignment and pricing algorithm using combinatorial double auctions. We demonstrate that this model is reduced to a maximum weighted independent set model, which is known to be APX-hard.A fast local search heuristic is also presented, which is capable of producing results that lie within 10\% of the exact approach for practical implementations. Our proposed algorithm could be used as a fast and reliable assignment and pricing mechanism of ride-sharing requests to vehicles during peak travel times. },
 }
 
-
-
-
-
-
+@unpublished{2020Anastasiadis1,
+  author    = {Anastasiadis L and Ainalis D and Qiming Ye and Karamanis R and Escribano M and Stettler M and Angeloudis P},
+  title     = {On the selection of charging facility locations for EV-based ride-hailing services: A computational case study},
+  year      = {2020},
+  note 		= {In Review},
+  abstract  = {The uptake of Electric Vehicles (EVs) is rapidly changing the landscape of urban mobility services. Transport Network Companies (TNCs) have been following this trend by increasing the number of EVs in their fleets. Despite the amount of new charging infrastructure being installed in recent years in most major cities, there are not sufficiently many Charging Stations (CSs) to meet the massive demand. For the purpose of economic operations, TNCs tend to couple such charging facilities location problem with EV fleets operations. More recently major TNCs have explored the prospect of establishing privately owned charging facilities. Given the scale and complexity of TNC operations, such decisions need to consider both the requirements of TNCs and local planning regulations. An optimisation approach is presented to model the placement of CSs with the objective of minimising the empty time travelled to the nearest CS for recharging as well as the installation cost. An agent based simulation has been set in the area of Chicago to derive the recharging spots of the TNC vehicles, and in turn derive the charging demand. The optimisation problem is solved approximately by a genetic algorithm.Our results indicate that nearly 180 CSs need to be installed to handle the demand of a TNC fleet of 3000 vehicles in Chicago.  },
+}
 
 
 
