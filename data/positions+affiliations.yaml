@@ -2,27 +2,34 @@ aca_posts:
   - org_name: Imperial College London
     org_location: United Kingdom
     roles:
+    - position_name: Reader in Transport Systems and Logistics
+      position_from: Aug 2020
+      position_to: Present
+      subroles: 
+      - Director, Intelligent Infrastructure & Transport Systems Laboratory (IITS)
+      - Deputy Director (Teaching), Centre for Transport Studies
+      - Committee Member, Imperial College Robotics Forum
+      - e-Learning Lead, Department of Civil & Environmental Engineering 
+      - Theme Leader (Resilience), Centre for Systems Engineering and Innovations
+      - Affiliate, Institute for Security Science and Technology
+      - Affiliate, Marine and Coastal Environments Network
+      - Affiliate, Grantham Institute
+      - Affiliate, Energy Futures Lab
     - position_name: Senior Lecturer in Transport Systems and Logistics
       position_from: Aug 2016
-      position_to: present
+      position_to: Aug 2020
     - position_name: Lecturer in Urban Engineering Systems
       position_from: Jun 2012
-      position_to: Jul 2016
-      subroles: 
-      - Director, Port Operations Research and Technology Centre (PORTeC)
-      - Director, Intelligent Infrastructure & Transport Systems Laboratory (IITS)
-      - Deputy Teaching Director, MSc in Transport
-      - Theme Leader (Resilience), Centre for Systems Engineering and Innovations
-      - Member, Institute for Security Science and Technology
-      - Member, Imperial Robotics Forum
+      position_to: Aug 2016
     - position_name: Research Associate
       position_from: Nov 2009
       position_to: May 2012
+      subroles: 
+      - Visiting Lecturer, Imperial College Business School
     - position_name: Research Assistant
       position_from: Nov 2008
       position_to: May 2009  
       subroles: 
-      - Visiting Lecturer, Imperial College Business School
       - Graduate Teaching Assistant, Dept. of Civil & Environmental Engineering
   - org_name: Kyoto University
     org_location: Japan

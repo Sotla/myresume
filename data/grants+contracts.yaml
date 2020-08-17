@@ -1,4 +1,9 @@
 research_grants:
+  - name: Impact Acceleration – Delos Platform Development
+    short: Delos Platform Development
+    year: 2020
+    source: UKRI/ESPRC
+    value: 78200
   - name: Validating autonomous vehicle safety using simulation and adaptive test generation
     year: 2019
     source: InnovateUK
@@ -6,7 +11,7 @@ research_grants:
   - name: A radical mode shift enabled by autonomous pods
     year: 2018
     source: InnovateUK
-    value: 299800
+    value: 389337
   - name: Sustainable demand responsive transit schemes for developing countries
     short: Sustainable DRT for developing countries
     code: EP/P512655/1
@@ -80,10 +85,15 @@ research_grants:
     value: 538302
 
 research_contracts:
+  - name: Evaluation of electromobility futures
+    short: Evaluation of electromobility futures
+    year: 2020
+    source: Hammerson Ltd, United Kingdom
+    value: 80000
   - name: Design and Implementation of a Logistics Fleet Management System
     short: Optimisation of logistics fleet operations 
     year: 2019
-    source: Private Client
+    source: Private Client, United Arab Emirates
     value: 40000
   - name: Optimisation of Prefabrication Strategies for Nuclear Construction
     short: Optimisation nuclear construction strategies 

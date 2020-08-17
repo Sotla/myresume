@@ -1,17 +1,19 @@
 phd_students:
+  - name: Yubin Liu
+    title: Urban Freight Distribution using Autonomous Vans
+    from: 2020
+    to: Present
+  - name: Eduardo Candela
+    title: Algorithmic Evaluation of Autonomous Vehicle Safety
+    from: 2019
+    to: Present
+  - name: Hongmin Zhu
+    title: Resilience of Infrastructure Systems
+    from: 2019
+    to: Present
   - name: Qiming Ye
     title: Influence of Shared Mobility Platforms on Urban Planning 
     from: 2018
-    to: Present
-  - name: Tim Haughton
-    title: Optimisation of prefabricated construction
-    url: https://www.imperial.ac.uk/people/timothy.haughton13
-    from: 2017
-    to: Present
-  - name: Leo Hsu 
-    title: Flexible design of supply chains in the construction industry
-    url: http://www.imperial.ac.uk/people/p.hsu15
-    from: 2015
     to: Present
   - name: Jose Escribano Macias
     title: Strategic planning of post-disaster infrastructure repairs
@@ -23,16 +25,21 @@ phd_students:
     title: Infrastructure Resilience Modelling
     from: 2015
     to: Present
-  - name: Nils Goldbeck
-    title: Development of Urban Infrastructure resilience models
-    url: https://www.imperial.ac.uk/people/n.goldbeck14
-    from: 2014
-    to: Present
   - name: Nina Jirouskova
     title: Quantitative analysis of container terminal recoveries from natural disasters
     url: http://www.imperial.ac.uk/sustainable-civil-engineering/ongoingresearch/cohort-1-students/ninajirouskova/
-    from: 2014
+    from: 2015
     to: Present
+  - name: Dr Leo Hsu 
+    title: Flexible design of supply chains in the construction industry
+    url: http://www.imperial.ac.uk/people/p.hsu15
+    from: 2015
+    to: 2019
+  - name: Dr Nils Goldbeck
+    title: Development of Urban Infrastructure resilience models
+    url: https://www.imperial.ac.uk/people/n.goldbeck14
+    from: 2014
+    to: 2019
   - name: Dr Jung-Yong Seo 
     url: https://www.imperial.ac.uk/people/jung-yong.seo12
     title: Integrated routing and scheduling of free-ranging Automated Guided Vehicles
@@ -76,20 +83,44 @@ phd_students:
     to: 2012
 
 postdocs:
+  - name: Ms He-in Cheong
+    project: Analysis of Ridesharing Impacts
+    from: 2020
+    to: Present
+  - name: Mr Jose Escribano-Macias
+    project: Agent-Based Simulation of Mobility Operations
+    from: 2020
+    to: Present
+  - name: Dr Leo Hsu
+    project: Data Analytics for Infrastructure Design
+    from: 2019
+    to: Present
   - name: Dr Eleftherios Anastasiadis
     project: Modelling of Shared Autonomous Vehicle Platforms
     url:   https://www.imperial.ac.uk/people/e.anastasiadis
     from: 2018
     to: Present
+  - name: Dr Felix Feng
+    project: Detection of Autonomous Vehicle Risk Factors
+    from: 2019
+    to: Present
+  - name: Dr Simon Stebbins
+    project: Simulation of Autonomous Vehilce Traffic
+    from: 2019
+    to: 2020
+  - name: Mr Renos Karamanis
+    project: Optimisation of Ridesharing Operations
+    from: 2019
+    to: 2020
   - name: Dr Pablo Achurra-Gonzalez
     project: Kinetic Energy Recovery Systems for Freight Vehicles
     url: http://www.imperial.ac.uk/people/p.achurra-gonzalez
     from: 2017
-    to: Present
+    to: 2019
   - name: Dr Daniel Ainalis
     project: Kinetic Energy Recovery Systems for Freight Vehicles
     from: 2018
-    to: Present
+    to: 2019
   - name: Dr Juan Marcos Garcia de la Cruz Lopez
     project: Kinetic Energy Recovery Systems for Freight Vehicles
     from: 2016
