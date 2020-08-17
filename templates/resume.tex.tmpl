@@ -120,7 +120,7 @@ directiveStartToken = !
 \vspace{.05in}\moveleft.7\hoffset\centerline{\small PHD, MEng, DIC, ACGI, MCILT}
 
 \vspace{.1in}
-\moveleft0.4\hoffset\centerline{\large{Associate Professor in Transport Systems \& Logistics} \textit{\small{(UK Senior Lecturer)}}}
+\moveleft0.4\hoffset\centerline{\large{Reader in Transport Systems \& Logistics} \textit{\small{(Senior Associate Professor)}}}
 
 \begin{resume}
 \vspace{-.1in}
@@ -138,13 +138,13 @@ London, SW7 2BU, United Kingdom                   & \textit{web:}    & imperial.
 
 \pdfbookmark[section]{Research Interests}{sec1}
 \section{\textsc{Research Interests}}
-Fleet Operations, Logistics, Shipping Markets, Network Resilience, Trajectory Optimisation, \\
-Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
+Transport Infrastructure, Autonomous Systems, Logistics, Freight Distribution, Fleet Operations, \\
+Network Optimisation, Algorithmic Game Theory, Agent-Based Simulation
 
 \pdfbookmark[section]{Academic Positions}{sec2}
 \section{\textsc{Academic Positions}}
 !for ;entry in ;aca_posts
-	{\textbf{;entry.org_name} }, ;entry.org_location \\
+	{\textbf{;entry.org_name}}, ;entry.org_location \\
 	!if ;entry.roles
 	!for ;entry1 in ;entry.roles
 		\tab[0.2in] \textit{;entry1.position_name} \hfill {\textbf{;entry1.position_from - ;entry1.position_to} }\\
@@ -161,7 +161,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \pdfbookmark[section]{Professional Positions}{sec3}
 \section{\textsc{Professional Positions}}
 !for ;entry in ;pro_posts
-	{\textbf{;entry.org_name} }, ;entry.org_location \\
+	{\textbf{;entry.org_name}}, ;entry.org_location \\
 	!if ;entry.roles
 	!for ;entry1 in ;entry.roles
 		\tab[0.2in] \textit{;entry1.position_name} \hfill {\textbf{;entry1.position_from - ;entry1.position_to} }\\
@@ -178,13 +178,13 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \pdfbookmark[section]{Professional Affiliations}{sec4}
 \section{\textsc{Professional Affiliations}}
 !for ;entry in ;pro_affiliations
-    {\textbf{;entry.title} } ;entry.organisation\\
+    {\textbf{;entry.title}}, ;entry.organisation\\
 !end for
 
 \vspace{-0.20in}
 \pdfbookmark[section]{Education}{sec5}
 \section{\textsc{Education}}
-{\textbf{Imperial College London} }\label{sec:sceducation}, United Kingdom\\
+{\textbf{Imperial College London}}\label{sec:sceducation}, United Kingdom\\
 \textit{PhD in Transport Engineering} \hfill {\textbf{Oct 2005 - Nov 2009} }\\
 \textit{MEng in Civil \& Environmental Engineering (First Class Honours)} \hfill {\textbf{Oct 2001 - Jun 2005} }\\
 
@@ -251,25 +251,25 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 !echo("{:,}".format(int(;sumtext)).rjust(7).replace(" ","\space"))
 }}
 
-\pdfbookmark[section]{PhD Thesis Supervision}{sec8}
-\section{\textsc{PhD Students}}
-!for ;entry in ;phd_students
-	\vspace{0.03in}
-	\begin{minipage}{\textwidth}
-	{\textbf{;entry.name} } \hfill {\textbf{;entry.from - ;entry.to} } \\
-	\tab[0.2in] \textit{;entry.title}
-	\end{minipage}
-	\\
-!end for
-
-\vspace{-0.15in}
-\pdfbookmark[section]{Postdoctoral Researchers}{postdocs}
-\section{\textsc{Postdoctoral Researchers}}
+\pdfbookmark[section]{Research Staff}{postdocs}
+\section{\textsc{Research Staff}}
 !for ;entry in ;postdocs
 	\vspace{0.03in}
 	\begin{minipage}{\textwidth}
 	{\textbf{;entry.name} } \hfill {\textbf{;entry.from - ;entry.to} } \\
 	\tab[0.2in] \textit{;entry.project}
+	\end{minipage}
+	\\
+!end for
+
+\vspace{-0.15in}
+\pdfbookmark[section]{Research Students}{sec8}
+\section{\textsc{Research Students}}
+!for ;entry in ;phd_students
+	\vspace{0.03in}
+	\begin{minipage}{\textwidth}
+	{\textbf{;entry.name} } \hfill {\textbf{;entry.from - ;entry.to} } \\
+	\tab[0.2in] \textit{;entry.title}
 	\end{minipage}
 	\\
 !end for
@@ -305,7 +305,7 @@ Algorithmic Game Theory, Metaheuristics, Agent-Based Simulation
 \pdfbookmark[section]{Teaching Contributions}{sec12}
 \section{\textsc{Teaching Contributions}}
 !for ;entry in ;teaching_contib
-	{\textbf{;entry.progamme} },\textit{;entry.role} \hfill {\textbf{;entry.years} }\\
+	{\textbf{;entry.progamme}}, \textit{;entry.role} \hfill {\textbf{;entry.years} }\\
 !end for
 
 \vspace{-0.15in}
