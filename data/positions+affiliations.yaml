@@ -61,9 +61,6 @@ pro_affiliations:
     title: Member
 
 ext_committees:
-  - organisation: UK Department for Transport (DfT)
-    dates: 2018 - Present
-    description: Expert Panel, Maritime 2050
   - organisation: Hyphen Mobility
     dates: 2018 - Present
     description: Scientific Advisor
@@ -73,6 +70,9 @@ ext_committees:
   - organisation: Ports and Channels Committee, Transportation Research Board    
     dates: 2014 - Present
     description: Research Coordinator, Committee Member
+  - organisation: UK Department for Transport (DfT)
+    dates: 2018 - 2019
+    description: Expert Panel, Maritime 2050
   - organisation: CharterDirect Shipping Ltd.
     dates: 2017 - 2019
     description: Scientific Advisor
@@ -89,5 +89,5 @@ ext_committees:
     dates: 2016 - 2017
     description: UK Representative - Task Group 193, Resilience of Port and Maritime Infrastructure
   - organisation: National Planning Department, Colombia
-    dates: 2016
+    dates: 2016 - 2017
     description: Advisor, National Logistics Masterplan
